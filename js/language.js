@@ -123,6 +123,20 @@
     updateSection('clients-title', t.sections.clients.title);
     updateSection('clients-subtitle', t.sections.clients.subtitle);
     
+    // Productos
+    if (t.sections.products) {
+      updateSection('products-title', t.sections.products.title);
+      updateSection('products-intro', t.sections.products.intro);
+    }
+    
+    // CTA
+    if (t.sections.cta) {
+      updateSection('cta-title', t.sections.cta.title);
+      updateSection('cta-text', t.sections.cta.text);
+      updateSection('cta-contact', t.sections.cta.contact);
+      updateSection('cta-products', t.sections.cta.products);
+    }
+    
     // Footer
     updateSection('footer-company', t.footer.company);
     updateSection('footer-sintia', t.footer.sintia);
@@ -145,6 +159,41 @@
     updateSection('footer-link-ava', t.footer.links.ava);
     updateSection('footer-link-demo', t.footer.links.demo);
     updateSection('footer-link-platform', t.footer.links.platform);
+    
+    // Footer legal links
+    if (t.legal) {
+      updateSection('footer-privacy', t.legal.privacy);
+      updateSection('footer-terms', t.legal.terms);
+      updateSection('footer-cookies', t.legal.cookies);
+    }
+    
+    // Cookies
+    if (t.cookies) {
+      updateSection('cookie-title', t.cookies.title);
+      const cookieText = document.getElementById('cookie-text');
+      if (cookieText && t.cookies.text) {
+        cookieText.innerHTML = t.cookies.text;
+      }
+      updateSection('cookie-accept-btn', t.cookies.accept);
+      updateSection('cookie-settings-btn', t.cookies.settings);
+      updateSection('cookie-reject-btn', t.cookies.reject);
+      updateSection('cookie-settings-title', t.cookies.settingsTitle);
+      updateSection('cookie-necessary-label', t.cookies.necessary.label);
+      updateSection('cookie-necessary-desc', t.cookies.necessary.desc);
+      updateSection('cookie-analytics-label', t.cookies.analytics.label);
+      updateSection('cookie-analytics-desc', t.cookies.analytics.desc);
+      updateSection('cookie-marketing-label', t.cookies.marketing.label);
+      updateSection('cookie-marketing-desc', t.cookies.marketing.desc);
+      updateSection('cookie-save-btn', t.cookies.save);
+    }
+    
+    // Error 404
+    if (t.legal && t.legal.error) {
+      updateSection('error-title', t.legal.error.title);
+      updateSection('error-text', t.legal.error.text);
+      updateSection('error-home', t.legal.error.home);
+      updateSection('error-contact', t.legal.error.contact);
+    }
   }
 
   function updateSection(id, text) {

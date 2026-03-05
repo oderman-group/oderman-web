@@ -23,15 +23,24 @@
     RewriteRule ^sintia/tarifas-comunicativo/?$ tarifas-modulo-comunicativo.php [L]
     RewriteRule ^sintia/ava/?$ ava-ambientes-virtuales.php [L]
     RewriteRule ^sintia/ambientes-virtuales/?$ ava-ambientes-virtuales.php [L]
-    RewriteRule ^sintia/?$ index.php#productos [L]
 
-    # URLs amigables - Páginas principales (si las creas en el futuro)
-    RewriteRule ^about/?$ about.php [L]
-    RewriteRule ^nosotros/?$ about.php [L]
+    # URLs amigables - Páginas legales
+    RewriteRule ^privacidad/?$ privacidad.php [L]
+    RewriteRule ^privacy/?$ privacidad.php [L]
+    RewriteRule ^terminos/?$ terminos.php [L]
+    RewriteRule ^terms/?$ terminos.php [L]
+    RewriteRule ^cookies/?$ cookies.php [L]
+    RewriteRule ^cookie-policy/?$ cookies.php [L]
+
+    # URLs amigables - Páginas principales
+    RewriteRule ^nosotros/?$ nosotros.php [L]
+    RewriteRule ^about/?$ nosotros.php [L]
+    RewriteRule ^productos/?$ productos.php [L]
+    RewriteRule ^products/?$ productos.php [L]
+    RewriteRule ^sintia/?$ sintia.php [L]
+    RewriteRule ^ecosistema-sintia/?$ sintia.php [L]
     RewriteRule ^services/?$ services.php [L]
     RewriteRule ^servicios/?$ services.php [L]
-    RewriteRule ^products/?$ products.php [L]
-    RewriteRule ^productos/?$ products.php [L]
     RewriteRule ^contact/?$ contact.php [L]
     RewriteRule ^contacto/?$ contact.php [L]
 
@@ -92,6 +101,6 @@ Options -Indexes
 # Charset UTF-8
 AddDefaultCharset UTF-8
 
-# Páginas de error personalizadas (opcional)
-# ErrorDocument 404 /404.php
-# ErrorDocument 500 /500.php
+# Páginas de error personalizadas
+ErrorDocument 404 /oderman-web/404.php
+# ErrorDocument 500 /oderman-web/500.php

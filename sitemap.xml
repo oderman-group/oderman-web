@@ -10,6 +10,30 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/?lang=en"/>
   </url>
   <url>
+    <loc>https://oderman.com.co/nosotros</loc>
+    <lastmod>2025-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oderman.com.co/nosotros"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/nosotros?lang=en"/>
+  </url>
+  <url>
+    <loc>https://oderman.com.co/productos</loc>
+    <lastmod>2025-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oderman.com.co/productos"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/productos?lang=en"/>
+  </url>
+  <url>
+    <loc>https://oderman.com.co/sintia</loc>
+    <lastmod>2025-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oderman.com.co/sintia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/sintia?lang=en"/>
+  </url>
+  <url>
     <loc>https://oderman.com.co/sintia/tarifas-comunicativo</loc>
     <lastmod>2025-03-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -32,5 +56,29 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://oderman.com.co/sintia/demo"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/sintia/demo?lang=en"/>
+  </url>
+  <url>
+    <loc>https://oderman.com.co/privacidad</loc>
+    <lastmod>2025-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oderman.com.co/privacidad"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/privacidad?lang=en"/>
+  </url>
+  <url>
+    <loc>https://oderman.com.co/terminos</loc>
+    <lastmod>2025-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oderman.com.co/terminos"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/terminos?lang=en"/>
+  </url>
+  <url>
+    <loc>https://oderman.com.co/cookies</loc>
+    <lastmod>2025-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oderman.com.co/cookies"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/cookies?lang=en"/>
   </url>
 </urlset>

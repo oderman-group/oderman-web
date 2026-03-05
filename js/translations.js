@@ -105,6 +105,16 @@ const translations = {
       clients: {
         title: "Nuestros Clientes",
         subtitle: "Instituciones y empresas que confían en nuestras soluciones"
+      },
+      products: {
+        title: "Nuestros Productos",
+        intro: "Desarrollamos soluciones de software a la medida que transforman la manera en que las organizaciones operan. Conoce nuestros productos diseñados para potenciar tu negocio."
+      },
+      cta: {
+        title: "¿Listo para transformar tu organización?",
+        text: "Descubre cómo nuestras soluciones de software a la medida pueden potenciar tu negocio. Contáctanos hoy y recibe una consultoría gratuita.",
+        contact: "Contactar ahora",
+        products: "Ver nuestros productos"
       }
     },
     // Footer
@@ -130,6 +140,41 @@ const translations = {
         ava: "AVA - Ambientes Virtuales",
         demo: "Demo para colegios",
         platform: "Plataforma SINTIA"
+      }
+    },
+    // Cookies
+    cookies: {
+      title: "Uso de Cookies",
+      text: "Utilizamos cookies para mejorar tu experiencia, analizar el tráfico del sitio y personalizar el contenido. Al hacer clic en \"Aceptar\", consientes el uso de cookies según nuestra <a href=\"" + (typeof url !== 'undefined' ? url('privacidad') : '/privacidad') + "\">Política de Privacidad</a>.",
+      accept: "Aceptar todas",
+      settings: "Configurar",
+      reject: "Rechazar",
+      settingsTitle: "Configuración de Cookies",
+      necessary: {
+        label: "Cookies Necesarias",
+        desc: "Estas cookies son esenciales para el funcionamiento del sitio."
+      },
+      analytics: {
+        label: "Cookies Analíticas",
+        desc: "Nos ayudan a entender cómo los visitantes interactúan con el sitio."
+      },
+      marketing: {
+        label: "Cookies de Marketing",
+        desc: "Se utilizan para mostrar anuncios relevantes y medir la efectividad de las campañas."
+      },
+      save: "Guardar Preferencias"
+    },
+    // Legal Pages
+    legal: {
+      privacy: "Política de Privacidad",
+      terms: "Términos y Condiciones",
+      cookies: "Política de Cookies",
+      updated: "Última actualización:",
+      error: {
+        title: "Página no encontrada",
+        text: "Lo sentimos, la página que buscas no existe o ha sido movida.",
+        home: "Volver al inicio",
+        contact: "Contacto"
       }
     }
   },
@@ -238,6 +283,16 @@ const translations = {
       clients: {
         title: "Our Clients",
         subtitle: "Institutions and companies that trust our solutions"
+      },
+      products: {
+        title: "Our Products",
+        intro: "We develop custom software solutions that transform the way organizations operate. Discover our products designed to boost your business."
+      },
+      cta: {
+        title: "Ready to transform your organization?",
+        text: "Discover how our custom software solutions can boost your business. Contact us today and receive a free consultation.",
+        contact: "Contact now",
+        products: "View our products"
       }
     },
     // Footer
@@ -263,6 +318,41 @@ const translations = {
         ava: "AVA - Virtual Learning Environments",
         demo: "Demo for Schools",
         platform: "SINTIA Platform"
+      }
+    },
+    // Cookies
+    cookies: {
+      title: "Cookie Usage",
+      text: "We use cookies to improve your experience, analyze site traffic and personalize content. By clicking \"Accept\", you consent to the use of cookies in accordance with our <a href=\"" + (typeof url !== 'undefined' ? url('privacidad') : '/privacidad') + "\">Privacy Policy</a>.",
+      accept: "Accept all",
+      settings: "Configure",
+      reject: "Reject",
+      settingsTitle: "Cookie Settings",
+      necessary: {
+        label: "Necessary Cookies",
+        desc: "These cookies are essential for the site to function."
+      },
+      analytics: {
+        label: "Analytics Cookies",
+        desc: "They help us understand how visitors interact with the site."
+      },
+      marketing: {
+        label: "Marketing Cookies",
+        desc: "Used to show relevant ads and measure campaign effectiveness."
+      },
+      save: "Save Preferences"
+    },
+    // Legal Pages
+    legal: {
+      privacy: "Privacy Policy",
+      terms: "Terms and Conditions",
+      cookies: "Cookie Policy",
+      updated: "Last updated:",
+      error: {
+        title: "Page not found",
+        text: "Sorry, the page you are looking for does not exist or has been moved.",
+        home: "Return to home",
+        contact: "Contact"
       }
     }
   }
