@@ -1,0 +1,920 @@
+/* ============================================
+   ODERMAN GROUP SAS - Landing
+   Diseño serio y profesional
+   ============================================ */
+
+:root {
+  --color-fondo: #0f172a;
+  --color-fondo-claro: #f8fafc;
+  --color-texto: #1e293b;
+  --color-texto-claro: #e2e8f0;
+  --color-acento: #0ea5e9;
+  --color-acento-hover: #0284c7;
+  --color-borde: #e2e8f0;
+  --fuente-titulos: 'Libre Baskerville', Georgia, serif;
+  --fuente-cuerpo: 'DM Sans', system-ui, sans-serif;
+  --ancho-max: 720px;
+  --espacio: 1.5rem;
+  --espacio-seccion: 4rem;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fuente-cuerpo);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--color-texto);
+  background: #fff;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15, 23, 42, 0.98);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.08);
+}
+
+.header__contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.header__logo-texto {
+  font-family: var(--fuente-titulos);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.header__logo-sas {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-texto-claro);
+  opacity: 0.9;
+}
+
+.header__nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.header__nav a {
+  color: var(--color-texto-claro);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  transition: color 0.2s;
+}
+
+.header__nav a:hover {
+  color: #fff;
+}
+
+.header__menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.header__menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #fff;
+  border-radius: 1px;
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-fondo);
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+    border-bottom: 1px solid var(--color-borde);
+    display: none;
+  }
+
+  .header__nav.header__nav--abierto {
+    display: flex;
+  }
+
+  .header__nav a {
+    color: var(--color-texto-claro);
+  }
+
+  .header__menu-btn {
+    display: flex;
+  }
+}
+
+/* Hero */
+.hero {
+  background: var(--color-fondo);
+  color: #fff;
+  padding: 4rem 1.5rem 5rem;
+  text-align: center;
+}
+
+.hero__contenedor {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.hero__etiqueta {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-acento);
+  margin: 0 0 1rem;
+}
+
+.hero__titulo {
+  font-family: var(--fuente-titulos);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 1.25rem;
+}
+
+.hero__subtitulo {
+  font-size: 1.0625rem;
+  color: var(--color-texto-claro);
+  margin: 0 0 2rem;
+  line-height: 1.6;
+}
+
+.hero__cta {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  background: var(--color-acento);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.hero__cta:hover {
+  background: var(--color-acento-hover);
+}
+
+/* Secciones */
+.seccion {
+  padding: var(--espacio-seccion) 1.5rem;
+}
+
+.seccion--clara {
+  background: var(--color-fondo-claro);
+}
+
+.contenedor {
+  max-width: var(--ancho-max);
+  margin: 0 auto;
+}
+
+.seccion__titulo {
+  font-family: var(--fuente-titulos);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-fondo);
+  margin: 0 0 1.25rem;
+}
+
+.seccion__subtitulo {
+  font-family: var(--fuente-titulos);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-fondo);
+  margin: 3rem 0 1rem;
+}
+
+.seccion__intro {
+  font-size: 1.0625rem;
+  margin: 0 0 1rem;
+}
+
+.bloque-texto p {
+  margin: 0 0 1rem;
+}
+
+.bloque-texto p:last-child {
+  margin-bottom: 0;
+}
+
+/* Valores */
+.valores-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.valores-lista--core {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.valores-lista--core > li {
+  padding: 1.25rem 1.5rem;
+  background: var(--color-fondo-claro);
+  border-radius: 8px;
+  border-left: 4px solid var(--color-acento);
+}
+
+.valores-lista__nombre {
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-fondo);
+  margin-bottom: 0.35rem;
+}
+
+.valores-lista__desc {
+  font-size: 0.9375rem;
+  color: var(--color-texto);
+}
+
+.valores-lista--complementarios {
+  margin-top: 1rem;
+}
+
+.valores-lista--complementarios li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--color-borde);
+  font-size: 0.9375rem;
+}
+
+.valores-lista--complementarios li:last-child {
+  border-bottom: none;
+}
+
+/* Ecosistema Sintia */
+.seccion--sintia {
+  background: linear-gradient(180deg, var(--color-fondo-claro) 0%, #fff 100%);
+}
+
+.seccion--sintia .seccion__intro {
+  margin-bottom: 0.75rem;
+}
+
+.seccion--sintia p:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-family: var(--fuente-cuerpo);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn--sintia {
+  background: var(--color-fondo);
+  color: #fff;
+}
+
+.btn--sintia:hover {
+  background: #1e293b;
+}
+
+.btn__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.btn--whatsapp {
+  background: #25d366;
+  color: #fff;
+  margin-top: 0.5rem;
+  border: none;
+}
+
+.btn--whatsapp:hover {
+  background: #20bd5a;
+}
+
+/* Contacto */
+.seccion--contacto .seccion__intro {
+  margin-bottom: 0.5rem;
+}
+
+.seccion--contacto p + p {
+  margin-bottom: 1.25rem;
+}
+
+.contacto__canales {
+  margin: 0;
+}
+
+.contacto__item {
+  margin: 0 0 0.75rem;
+  font-size: 0.9375rem;
+}
+
+.contacto__etiqueta {
+  display: inline-block;
+  min-width: 5.5rem;
+  font-weight: 600;
+  color: var(--color-texto);
+}
+
+.contacto__enlace {
+  color: var(--color-acento);
+  text-decoration: none;
+}
+
+.contacto__enlace:hover {
+  text-decoration: underline;
+}
+
+.seccion--contacto .btn--whatsapp {
+  margin-top: 0.75rem;
+}
+
+/* Footer */
+.footer {
+  background: var(--color-fondo);
+  color: var(--color-texto-claro);
+  padding: 3rem 1.5rem 2rem;
+}
+
+.footer__contenedor-ancho {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem 2.5rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.12);
+}
+
+.footer__bloque {
+  min-width: 0;
+}
+
+.footer__titulo {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 1rem;
+}
+
+.footer__lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__lista li {
+  margin-bottom: 0.5rem;
+}
+
+.footer__lista a {
+  color: var(--color-texto-claro);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  transition: color 0.2s;
+}
+
+.footer__lista a:hover {
+  color: #fff;
+}
+
+.footer__externo {
+  font-size: 0.75em;
+  opacity: 0.8;
+}
+
+.footer__lista--contacto a {
+  word-break: break-all;
+}
+
+.footer__wa {
+  color: #25d366 !important;
+}
+
+.footer__redes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.footer__red {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-texto-claro);
+  text-decoration: none;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.footer__red:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.footer__baja {
+  text-align: center;
+}
+
+.footer__firma {
+  margin: 0 0 0.35rem;
+  font-size: 0.875rem;
+}
+
+.footer__dominio {
+  margin: 0;
+  font-size: 0.8125rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Página interna (ej. tarifas) */
+.pagina-interna .hero--compacto {
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.hero--compacto .hero__titulo {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+}
+
+.hero--compacto .hero__subtitulo {
+  margin-bottom: 0;
+}
+
+/* Campaña San Juan Nepomuceno / Bolívar */
+.hero--campania {
+  padding: 3rem 1.5rem 4rem;
+}
+
+.hero--campania .hero__subtitulo {
+  margin-bottom: 1.5rem;
+}
+
+.btn--hero {
+  font-size: 1rem;
+  padding: 0.9rem 1.5rem;
+}
+
+/* Video responsive 16:9 + card con degradado y sombra */
+.contenedor--video {
+  max-width: 960px;
+}
+
+.seccion--video .seccion__titulo {
+  margin-bottom: 1.5rem;
+}
+
+.video-card {
+  padding: 1rem;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%);
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 10px 25px -5px rgba(15, 23, 42, 0.12), 0 0 0 1px rgba(15, 23, 42, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.video-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-acento), var(--color-fondo));
+  border-radius: 16px 16px 0 0;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--color-fondo);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pagina-campania .campania-modulo__desc {
+  margin: 0 0 1rem;
+  line-height: 1.65;
+}
+
+.campania-modulo__lista {
+  margin: 0 0 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.campania-modulo__lista li {
+  margin-bottom: 0.35rem;
+}
+
+.campania-modulo__cta {
+  margin: 0;
+}
+
+.seccion--demo .seccion__intro {
+  margin-bottom: 1rem;
+}
+
+.seccion--demo p + p {
+  margin-bottom: 1.25rem;
+}
+
+.btn--demo {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.demo-contacto {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-borde);
+  font-size: 0.9375rem;
+}
+
+.demo-contacto p {
+  margin: 0 0 0.35rem;
+}
+
+.demo-contacto a {
+  color: var(--color-acento);
+  text-decoration: none;
+}
+
+.demo-contacto a:hover {
+  text-decoration: underline;
+}
+
+/* Tarifas módulo comunicativo */
+.tarifas__aviso {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.tarifas__aviso-titulo {
+  font-family: var(--fuente-cuerpo);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #92400e;
+  margin: 0 0 0.5rem;
+}
+
+.tarifas__aviso p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: #78350f;
+  line-height: 1.55;
+}
+
+.tarifas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.tarifa {
+  background: var(--color-fondo-claro);
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid var(--color-borde);
+}
+
+.tarifa__encabezado {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--color-acento);
+}
+
+.tarifa__icono {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.tarifa__titulo {
+  font-family: var(--fuente-titulos);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-fondo);
+  margin: 0;
+}
+
+.tarifa__lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tarifa__lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--color-borde);
+  font-size: 0.9375rem;
+}
+
+.tarifa__lista li:last-child {
+  border-bottom: none;
+}
+
+.tarifa__destacado {
+  background: rgba(14, 165, 233, 0.08);
+  margin: 0 -1rem;
+  padding: 0.6rem 1rem !important;
+  border-radius: 6px;
+  border-bottom: none !important;
+  font-weight: 600;
+}
+
+.tarifa__total {
+  margin-top: 0.5rem;
+  padding-top: 0.75rem !important;
+  border-top: 2px solid var(--color-acento) !important;
+  font-weight: 700;
+}
+
+.tarifa__total .tarifa__precio {
+  font-size: 1rem;
+}
+
+.tarifa__concepto {
+  color: var(--color-texto);
+}
+
+.tarifa__precio {
+  font-weight: 600;
+  color: var(--color-fondo);
+  white-space: nowrap;
+}
+
+.tarifas__aclaraciones {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-borde);
+}
+
+.tarifas__aclaraciones .seccion__titulo {
+  margin-bottom: 1rem;
+}
+
+.tarifas__lista-aclaraciones {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tarifas__lista-aclaraciones li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-borde);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-texto);
+}
+
+.tarifas__lista-aclaraciones li:last-child {
+  border-bottom: none;
+}
+
+.tarifas__lista-aclaraciones strong {
+  color: var(--color-fondo);
+}
+
+.tarifas__nota {
+  font-size: 0.9375rem;
+  color: #64748b;
+  margin: 2rem 0 0;
+}
+
+.tarifas__nota a {
+  color: var(--color-acento);
+  text-decoration: none;
+}
+
+.tarifas__nota a:hover {
+  text-decoration: underline;
+}
+
+.tarifas__cta {
+  margin: 1.5rem 0 0;
+}
+
+@media (max-width: 768px) {
+  .tarifas {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* AVA - Ambientes Virtuales de Aprendizaje */
+.ava-modulos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.ava-modulo {
+  background: var(--color-fondo-claro);
+  border: 1px solid var(--color-borde);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.ava-modulo__titulo {
+  font-family: var(--fuente-titulos);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-fondo);
+  margin: 0 0 0.5rem;
+}
+
+.ava-modulo__desc {
+  font-size: 0.9375rem;
+  color: var(--color-texto);
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+.ava-modulo__precio {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-acento);
+  margin: 0;
+}
+
+.ava-paquete {
+  background: linear-gradient(135deg, var(--color-fondo) 0%, #1e293b 100%);
+  color: #fff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.ava-paquete__titulo {
+  font-family: var(--fuente-titulos);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.ava-paquete__desc {
+  font-size: 0.9375rem;
+  color: var(--color-texto-claro);
+  margin: 0 0 0.75rem;
+}
+
+.ava-paquete__precio {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.ava-paquete__nota {
+  font-size: 0.875rem;
+  color: rgba(226, 232, 240, 0.85);
+  margin: 0;
+}
+
+/* AVA - Beneficios por módulo */
+.ava-beneficios {
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--color-borde);
+}
+
+.ava-beneficios .seccion__titulo {
+  margin-bottom: 0.75rem;
+}
+
+.ava-beneficios__intro {
+  font-size: 1rem;
+  color: var(--color-texto);
+  margin: 0 0 2rem;
+  line-height: 1.6;
+}
+
+.ava-beneficio {
+  background: var(--color-fondo-claro);
+  border-left: 4px solid var(--color-acento);
+  border-radius: 0 8px 8px 0;
+  padding: 1.5rem 1.5rem 1.5rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.ava-beneficio:last-child {
+  margin-bottom: 0;
+}
+
+.ava-beneficio__titulo {
+  font-family: var(--fuente-titulos);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-fondo);
+  margin: 0 0 0.75rem;
+}
+
+.ava-beneficio p {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--color-texto);
+}
+
+.ava-beneficio strong {
+  color: var(--color-fondo);
+}
+
+@media (max-width: 600px) {
+  .ava-modulos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ajustes de impresión */
+@media print {
+  .header { position: relative; background: #0f172a; }
+  .header__menu-btn { display: none; }
+  .hero__cta { display: none; }
+}
