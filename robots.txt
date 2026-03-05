@@ -1,0 +1,17 @@
+# robots.txt para ODERMAN GROUP SAS
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://oderman.com.co/sitemap.xml
+
+# No indexar archivos de configuración
+Disallow: /includes/
+Disallow: /*.php$
+Allow: /index.php
+Allow: /sintia/
+
+# Permitir recursos estáticos
+Allow: /css/
+Allow: /js/
+Allow: /img/

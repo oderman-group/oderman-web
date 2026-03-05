@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  
   <meta name="description" content="Ambientes Virtuales de Aprendizaje (AVA) en SINTIA: evaluaciones online, tareas en casa, foros de discusión, clases y ausencias. Tarifas mensuales para instituciones.">
   <meta name="keywords" content="SINTIA, AVA, ambientes virtuales, aprendizaje, evaluaciones online, tareas, foros, Oderman">
   <meta name="author" content="ODERMAN GROUP SAS">
@@ -12,24 +20,29 @@
   <link rel="canonical" href="https://oderman.com.co/ava-ambientes-virtuales.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" type="image/png" href="img/logooderman.png">
 </head>
 <body>
   <header class="header">
     <div class="header__contenedor">
       <a href="index.html" class="header__logo" aria-label="ODERMAN GROUP SAS - Inicio">
-        <span class="header__logo-texto">ODERMAN</span>
-        <span class="header__logo-sas">GROUP SAS</span>
+        <img src="img/logooderman.png" alt="ODERMAN GROUP SAS Logo" class="header__logo-img">
+        <div class="header__logo-text">
+          <span class="header__logo-texto">ODERMAN</span>
+          <span class="header__logo-sas">GROUP SAS</span>
+        </div>
       </a>
-      <nav class="header__nav" aria-label="Navegación principal">
-        <a href="index.html#nosotros">Nosotros</a>
-        <a href="index.html#sintia">Sintia</a>
-        <a href="index.html#mision">Misión</a>
-        <a href="index.html#vision">Visión</a>
-        <a href="index.html#valores">Valores</a>
-        <a href="index.html#contacto">Contacto</a>
-      </nav>
+      <div class="header__nav-wrapper" aria-hidden="true">
+        <nav class="header__nav" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a>
+          <a href="index.html#nosotros">Nosotros</a>
+          <a href="index.html#servicios">Servicios</a>
+          <a href="index.html#productos">Productos</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+      </div>
       <button type="button" class="header__menu-btn" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -124,6 +137,8 @@
           <ul class="footer__lista">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="index.html#servicios">Servicios</a></li>
+            <li><a href="index.html#productos">Productos</a></li>
             <li><a href="index.html#mision">Misión</a></li>
             <li><a href="index.html#vision">Visión</a></li>
             <li><a href="index.html#valores">Valores</a></li>
@@ -134,7 +149,7 @@
         <div class="footer__bloque">
           <h3 class="footer__titulo">Ecosistema SINTIA</h3>
           <ul class="footer__lista">
-            <li><a href="index.html#sintia">Ecosistema SINTIA</a></li>
+            <li><a href="index.html#productos">Ecosistema SINTIA</a></li>
             <li><a href="tarifas-modulo-comunicativo.html">Tarifas módulo comunicativo</a></li>
             <li><a href="ava-ambientes-virtuales.html">AVA - Ambientes Virtuales</a></li>
             <li><a href="sintia-demo-colegios.html">Demo para colegios</a></li>
@@ -160,7 +175,7 @@
         </div>
       </div>
       <div class="footer__baja">
-        <p class="footer__firma">© <span id="anio">2025</span> ODERMAN GROUP SAS. Todos los derechos reservados.</p>
+        <p class="footer__firma">© <span id="anio"></span> ODERMAN GROUP SAS. Todos los derechos reservados.</p>
         <p class="footer__dominio">oderman.com.co</p>
       </div>
     </div>
@@ -170,12 +185,21 @@
     (function() {
       document.getElementById('anio').textContent = new Date().getFullYear();
       var btn = document.querySelector('.header__menu-btn');
-      var nav = document.querySelector('.header__nav');
-      if (btn && nav) {
+      var navWrapper = document.querySelector('.header__nav-wrapper');
+      if (btn && navWrapper) {
         btn.addEventListener('click', function() {
-          var open = nav.classList.toggle('header__nav--abierto');
-          btn.setAttribute('aria-expanded', open);
-          btn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+          var isOpen = navWrapper.getAttribute('aria-hidden') === 'false';
+          navWrapper.setAttribute('aria-hidden', !isOpen);
+          btn.setAttribute('aria-expanded', !isOpen);
+          btn.setAttribute('aria-label', !isOpen ? 'Cerrar menú' : 'Abrir menú');
+        });
+        var navLinks = navWrapper.querySelectorAll('a');
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            navWrapper.setAttribute('aria-hidden', 'true');
+            btn.setAttribute('aria-expanded', 'false');
+            btn.setAttribute('aria-label', 'Abrir menú');
+          });
         });
       }
     })();

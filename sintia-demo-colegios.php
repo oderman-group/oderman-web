@@ -1,0 +1,255 @@
+<?php
+require_once __DIR__ . '/includes/config.php';
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube.com;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  
+  <meta name="description" content="SINTIA para colegios: plataforma integral con módulo académico, financiero, convivencia, comunicación y AVA. Agenda una demo en vivo para tu institución. Bolívar y más regiones.">
+  <meta name="keywords" content="SINTIA, colegios, plataforma educativa, demo, Bolívar, inscripciones, matrículas, pagos en línea, AVA">
+  <meta name="author" content="ODERMAN GROUP SAS">
+  <meta name="robots" content="index, follow">
+
+  <title>SINTIA para colegios | Agenda tu demo en vivo</title>
+  <link rel="canonical" href="https://oderman.com.co/sintia/demo">
+  <link rel="alternate" hreflang="es" href="https://oderman.com.co/sintia/demo">
+  <link rel="alternate" hreflang="en" href="https://oderman.com.co/sintia/demo?lang=en">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="<?php echo asset('css/estilos.css'); ?>">
+  <link rel="icon" type="image/png" href="<?php echo asset('img/logooderman.png'); ?>">
+</head>
+<body>
+  <header class="header">
+    <div class="header__contenedor">
+      <a href="<?php echo url(); ?>" class="header__logo" aria-label="ODERMAN GROUP SAS - Inicio">
+        <img src="<?php echo asset('img/logooderman.png'); ?>" alt="ODERMAN GROUP SAS Logo" class="header__logo-img">
+        <div class="header__logo-text">
+          <span class="header__logo-texto">ODERMAN</span>
+          <span class="header__logo-sas">GROUP SAS</span>
+        </div>
+      </a>
+      <div class="header__nav-wrapper" aria-hidden="true">
+        <nav class="header__nav" aria-label="Navegación principal">
+          <a href="<?php echo url(); ?>">Inicio</a>
+          <a href="<?php echo url(); ?>#nosotros">Nosotros</a>
+          <a href="<?php echo url(); ?>#servicios">Servicios</a>
+          <a href="<?php echo url(); ?>#productos">Productos</a>
+          <a href="<?php echo url(); ?>#contacto">Contacto</a>
+        </nav>
+      </div>
+      <button type="button" class="header__menu-btn" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="pagina-interna pagina-campania">
+    <section class="hero hero--campania">
+      <div class="hero__contenedor">
+        <p class="hero__etiqueta">SINTIA · Colegios</p>
+        <h1 class="hero__titulo">SINTIA ya es la plataforma de varios colegios de Colombia. Llegamos a Bolívar y seguimos expandiéndonos a más regiones</h1>
+        <p class="hero__subtitulo">Todo integrado en una sola plataforma: directivos, docentes, acudientes y estudiantes en un solo ecosistema. Si en tu colegio tomas decisiones o puedes influir en ellas, te invitamos a agendar una demo en vivo. Sin compromiso.</p>
+        <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20para%20mi%20colegio.%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--hero">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Quiero agendar una DEMO por WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <section class="seccion seccion--clara">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Todo integrado en una sola plataforma</h2>
+        <p class="seccion__intro">Inscripciones, matrículas, cargas académicas, horarios, notas, cobros, pagos en línea, observador del alumno, comunicados con acudientes y ambiente virtual de aprendizaje: todo en un solo lugar. <strong>Directivos, docentes, acudientes y estudiantes en un solo ecosistema.</strong></p>
+      </div>
+    </section>
+
+    <section class="seccion seccion--video">
+      <div class="contenedor contenedor--video">
+        <h2 class="seccion__titulo">Conoce SINTIA en video</h2>
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/g2LSYPm7hR4" title="Video de SINTIA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="academico" class="seccion campania-modulo">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Módulo académico</h2>
+        <p class="campania-modulo__desc">Inscripciones, matrículas, cargas académicas, horarios, notas y boletines. Gestiona grados, cursos, asignaturas y docentes desde un solo panel. Los estudiantes y acudientes consultan horarios y calificaciones en tiempo real; coordinación y rectoría tienen reportes y consolidados sin depender de planillas.</p>
+        <ul class="campania-modulo__lista">
+          <li>Inscripciones y matrículas</li>
+          <li>Cargas académicas y horarios</li>
+          <li>Notas y boletines</li>
+          <li>Reportes para coordinación y rectoría</li>
+        </ul>
+        <p class="campania-modulo__cta">
+          <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20M%C3%B3dulo%20acad%C3%A9mico%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">Consultar por WhatsApp</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="financiero" class="seccion seccion--clara campania-modulo">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Módulo financiero</h2>
+        <p class="campania-modulo__desc">Cobros, abonos, pagos en línea y cartera. Los acudientes pueden ver cuotas, pagar por internet y llevar el historial de pagos. La institución centraliza la información financiera, reduce el manejo de efectivo y tiene reportes de cartera y recaudo al día.</p>
+        <ul class="campania-modulo__lista">
+          <li>Cobros y abonos</li>
+          <li>Pagos en línea</li>
+          <li>Cartera y reportes de recaudo</li>
+        </ul>
+        <p class="campania-modulo__cta">
+          <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20M%C3%B3dulo%20financiero%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">Consultar por WhatsApp</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="convivencia" class="seccion campania-modulo">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Módulo de convivencia</h2>
+        <p class="campania-modulo__desc">Observador del alumno, seguimiento y reportes. Registra incidencias, seguimientos disciplinarios y logros de convivencia en un solo lugar. Coordinación y docentes tienen el historial del estudiante a la mano; los reportes facilitan reuniones con acudientes y cumplimiento normativo.</p>
+        <ul class="campania-modulo__lista">
+          <li>Observador del alumno</li>
+          <li>Seguimiento y reportes de convivencia</li>
+        </ul>
+        <p class="campania-modulo__cta">
+          <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20M%C3%B3dulo%20convivencia%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">Consultar por WhatsApp</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="comunicacion" class="seccion seccion--clara campania-modulo">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Módulo de comunicación</h2>
+        <p class="campania-modulo__desc">Comunicados con acudientes y toda la comunidad por <strong>email</strong>, <strong>SMS</strong> y <strong>WhatsApp</strong>. Envía circulares, recordatorios y avisos desde la plataforma; los mensajes llegan directo al celular o al correo. Menos papeles, menos “no me enteré” y más cercanía con las familias.</p>
+        <ul class="campania-modulo__lista">
+          <li>Email, SMS y notificaciones WhatsApp</li>
+          <li>Comunicados masivos o por grupo</li>
+        </ul>
+        <p class="campania-modulo__cta">
+          <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20M%C3%B3dulo%20comunicaci%C3%B3n%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">Consultar por WhatsApp</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="ava" class="seccion campania-modulo">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">AVA – Ambiente virtual de aprendizaje</h2>
+        <p class="campania-modulo__desc">Evaluaciones en línea, tareas en casa, foros de discusión y control de clases y ausencias. Los estudiantes realizan pruebas y tareas desde la plataforma; docentes y coordinación tienen todo centralizado. Opcional por módulo o en paquete.</p>
+        <ul class="campania-modulo__lista">
+          <li>Evaluaciones online</li>
+          <li>Tareas en casa</li>
+          <li>Foros de discusión</li>
+          <li>Clases y ausencias</li>
+        </ul>
+        <p class="campania-modulo__cta">
+          <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20AVA%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">Consultar por WhatsApp</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="demo" class="seccion seccion--clara seccion--demo">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Agenda tu demo en vivo</h2>
+        <p class="seccion__intro">Si en tu colegio tomas decisiones o puedes influir en ellas (rectoría, coordinación, dirección académica o administrativa), te invitamos a agendar una demo: te mostramos la plataforma y te aclaramos todas las dudas. <strong>Sin compromiso.</strong></p>
+        <p>Escribe por WhatsApp: <strong>«Me interesa una DEMO de SINTIA»</strong>, indicando el nombre del colegio y, si quieres, tu municipio o región, al número <a href="tel:+573006075800">300 607 5800</a>.</p>
+        <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--demo">Escribir por WhatsApp al 300 607 5800</a>
+        <div class="demo-contacto">
+          <p><strong>Información de contacto</strong></p>
+          <p>Teléfono: <a href="tel:+573006075800">300 607 5800</a></p>
+          <p>Correo: <a href="mailto:info@plataformasintia.com">info@plataformasintia.com</a></p>
+          <p>Web: <a href="https://plataformasintia.com" target="_blank" rel="noopener noreferrer">plataformasintia.com</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__contenedor-ancho">
+      <div class="footer__grid">
+        <div class="footer__bloque">
+          <h3 class="footer__titulo">Empresa</h3>
+          <ul class="footer__lista">
+            <li><a href="<?php echo url(); ?>">Inicio</a></li>
+            <li><a href="<?php echo url(); ?>#nosotros">Nosotros</a></li>
+            <li><a href="<?php echo url(); ?>#servicios">Servicios</a></li>
+            <li><a href="<?php echo url(); ?>#productos">Productos</a></li>
+            <li><a href="<?php echo url(); ?>#mision">Misión</a></li>
+            <li><a href="<?php echo url(); ?>#vision">Visión</a></li>
+            <li><a href="<?php echo url(); ?>#valores">Valores</a></li>
+            <li><a href="<?php echo url(); ?>#contacto">Contacto</a></li>
+            <li><a href="https://oderman-group.com/" target="_blank" rel="noopener noreferrer">Sitio corporativo <span class="footer__externo" aria-label="Abre en nueva pestaña">↗</span></a></li>
+          </ul>
+        </div>
+        <div class="footer__bloque">
+          <h3 class="footer__titulo">Ecosistema SINTIA</h3>
+          <ul class="footer__lista">
+            <li><a href="<?php echo url(); ?>#productos">Ecosistema SINTIA</a></li>
+            <li><a href="<?php echo url('sintia/tarifas-comunicativo'); ?>">Tarifas módulo comunicativo</a></li>
+            <li><a href="<?php echo url('sintia/ava'); ?>">AVA - Ambientes Virtuales</a></li>
+            <li><a href="<?php echo url('sintia/demo'); ?>">Demo para colegios</a></li>
+            <li><a href="https://plataformasintia.com" target="_blank" rel="noopener noreferrer">Plataforma SINTIA <span class="footer__externo" aria-label="Abre en nueva pestaña">↗</span></a></li>
+          </ul>
+        </div>
+        <div class="footer__bloque">
+          <h3 class="footer__titulo">Contacto</h3>
+          <ul class="footer__lista footer__lista--contacto">
+            <li><a href="mailto:info@oderman-group.com">info@oderman-group.com</a></li>
+            <li><a href="tel:+573006075800">+57 300 607 5800</a></li>
+            <li><a href="https://wa.me/573006075800" target="_blank" rel="noopener noreferrer" class="footer__wa">WhatsApp</a></li>
+          </ul>
+        </div>
+        <div class="footer__bloque footer__bloque--redes">
+          <h3 class="footer__titulo">Síguenos</h3>
+          <div class="footer__redes">
+            <a href="https://www.facebook.com/plataformasintia/" target="_blank" rel="noopener noreferrer" class="footer__red" aria-label="Facebook SINTIA">Facebook</a>
+            <a href="https://x.com/platsintia" target="_blank" rel="noopener noreferrer" class="footer__red" aria-label="X SINTIA">X</a>
+            <a href="https://www.instagram.com/platsintia/" target="_blank" rel="noopener noreferrer" class="footer__red" aria-label="Instagram SINTIA">Instagram</a>
+            <a href="https://www.youtube.com/c/Plataformasintia/videos" target="_blank" rel="noopener noreferrer" class="footer__red" aria-label="YouTube SINTIA">YouTube</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__baja">
+        <p class="footer__firma">© <span id="anio"></span> ODERMAN GROUP SAS. Todos los derechos reservados.</p>
+        <p class="footer__dominio">oderman.com.co</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      document.getElementById('anio').textContent = new Date().getFullYear();
+      var btn = document.querySelector('.header__menu-btn');
+      var navWrapper = document.querySelector('.header__nav-wrapper');
+      if (btn && navWrapper) {
+        btn.addEventListener('click', function() {
+          var isOpen = navWrapper.getAttribute('aria-hidden') === 'false';
+          navWrapper.setAttribute('aria-hidden', !isOpen);
+          btn.setAttribute('aria-expanded', !isOpen);
+          btn.setAttribute('aria-label', !isOpen ? 'Cerrar menú' : 'Abrir menú');
+        });
+        var navLinks = navWrapper.querySelectorAll('a');
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            navWrapper.setAttribute('aria-hidden', 'true');
+            btn.setAttribute('aria-expanded', 'false');
+            btn.setAttribute('aria-label', 'Abrir menú');
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
