@@ -36,37 +36,37 @@ require_once __DIR__ . '/includes/config.php';
     <section class="hero hero--compacto">
       <div class="hero__contenedor">
         <p class="hero__etiqueta">SINTIA</p>
-        <h1 class="hero__titulo">Tarifas del módulo comunicativo</h1>
-        <p class="hero__subtitulo">Precios de email, SMS y notificaciones WhatsApp para instituciones que usan la plataforma SINTIA.</p>
+        <h1 class="hero__titulo" id="rates-title">Tarifas del módulo comunicativo</h1>
+        <p class="hero__subtitulo" id="rates-subtitle">Precios de email, SMS y notificaciones WhatsApp para instituciones que usan la plataforma SINTIA.</p>
       </div>
     </section>
 
     <section class="seccion">
       <div class="container-content">
-        <p class="seccion__intro">El <strong>módulo comunicativo de SINTIA</strong> permite enviar comunicados y notificaciones por correo electrónico, SMS y WhatsApp a estudiantes, acudientes y docentes. Las tarifas aplican por mensaje enviado; los paquetes precomprados ofrecen un mejor valor por unidad.</p>
+        <p class="seccion__intro" id="rates-intro">El <strong>módulo comunicativo de SINTIA</strong> permite enviar comunicados y notificaciones por correo electrónico, SMS y WhatsApp a estudiantes, acudientes y docentes. Las tarifas aplican por mensaje enviado; los paquetes precomprados ofrecen un mejor valor por unidad.</p>
 
         <div class="tarifas__aviso" role="note">
-          <h2 class="tarifas__aviso-titulo">Importante sobre los precios</h2>
-          <p>Los valores mostrados son <strong>estimados</strong> y pueden variar en cualquier momento. Dependen de nuestro proveedor de comunicaciones y de factores externos como el tipo de cambio del dólar, costos de operadores y políticas de las plataformas. La tarifa final aplicable será la vigente al momento de la compra o del envío, según corresponda. Te recomendamos confirmar precios con nosotros antes de adquirir paquetes.</p>
+          <h2 class="tarifas__aviso-titulo" id="rates-important-title">Importante sobre los precios</h2>
+          <p id="rates-important-text">Los valores mostrados son <strong>estimados</strong> y pueden variar en cualquier momento. Dependen de nuestro proveedor de comunicaciones y de factores externos como el tipo de cambio del dólar, costos de operadores y políticas de las plataformas. La tarifa final aplicable será la vigente al momento de la compra o del envío, según corresponda. Te recomendamos confirmar precios con nosotros antes de adquirir paquetes.</p>
         </div>
 
         <div class="tarifas">
           <article class="tarifa">
             <div class="tarifa__encabezado">
               <span class="tarifa__icono" aria-hidden="true">✉</span>
-              <h2 class="tarifa__titulo">Email</h2>
+              <h2 class="tarifa__titulo" id="rates-email-title">Email</h2>
             </div>
             <ul class="tarifa__lista">
               <li>
-                <span class="tarifa__concepto">Por mensaje suelto</span>
+                <span class="tarifa__concepto" id="rates-email-single">Por mensaje suelto</span>
                 <span class="tarifa__precio">$20 <abbr title="pesos colombianos">COP</abbr> / mensaje</span>
               </li>
               <li class="tarifa__destacado">
-                <span class="tarifa__concepto">Paquete 10.000 emails</span>
+                <span class="tarifa__concepto" id="rates-email-package">Paquete 10.000 emails</span>
                 <span class="tarifa__precio">$10 <abbr title="pesos colombianos">COP</abbr> / mensaje</span>
               </li>
               <li class="tarifa__total">
-                <span class="tarifa__concepto">Total del paquete</span>
+                <span class="tarifa__concepto" id="rates-email-total">Total del paquete</span>
                 <span class="tarifa__precio">$100.000 <abbr title="pesos colombianos">COP</abbr></span>
               </li>
             </ul>
@@ -75,19 +75,19 @@ require_once __DIR__ . '/includes/config.php';
           <article class="tarifa">
             <div class="tarifa__encabezado">
               <span class="tarifa__icono" aria-hidden="true">📱</span>
-              <h2 class="tarifa__titulo">SMS</h2>
+              <h2 class="tarifa__titulo" id="rates-sms-title">SMS</h2>
             </div>
             <ul class="tarifa__lista">
               <li>
-                <span class="tarifa__concepto">Por mensaje suelto</span>
+                <span class="tarifa__concepto" id="rates-sms-single">Por mensaje suelto</span>
                 <span class="tarifa__precio">$300 <abbr title="pesos colombianos">COP</abbr> / mensaje</span>
               </li>
               <li class="tarifa__destacado">
-                <span class="tarifa__concepto">Paquete 1.000 SMS</span>
+                <span class="tarifa__concepto" id="rates-sms-package">Paquete 1.000 SMS</span>
                 <span class="tarifa__precio">$280 <abbr title="pesos colombianos">COP</abbr> / mensaje</span>
               </li>
               <li class="tarifa__total">
-                <span class="tarifa__concepto">Total del paquete</span>
+                <span class="tarifa__concepto" id="rates-sms-total">Total del paquete</span>
                 <span class="tarifa__precio">$280.000 <abbr title="pesos colombianos">COP</abbr></span>
               </li>
             </ul>
@@ -96,19 +96,19 @@ require_once __DIR__ . '/includes/config.php';
           <article class="tarifa">
             <div class="tarifa__encabezado">
               <span class="tarifa__icono" aria-hidden="true">💬</span>
-              <h2 class="tarifa__titulo">WhatsApp</h2>
+              <h2 class="tarifa__titulo" id="rates-whatsapp-title">WhatsApp</h2>
             </div>
             <ul class="tarifa__lista">
               <li>
-                <span class="tarifa__concepto">Por mensaje suelto</span>
+                <span class="tarifa__concepto" id="rates-whatsapp-single">Por mensaje suelto</span>
                 <span class="tarifa__precio">$150 <abbr title="pesos colombianos">COP</abbr> / mensaje</span>
               </li>
               <li class="tarifa__destacado">
-                <span class="tarifa__concepto">Paquete 1.000 notificaciones</span>
+                <span class="tarifa__concepto" id="rates-whatsapp-package">Paquete 1.000 notificaciones</span>
                 <span class="tarifa__precio">$110 <abbr title="pesos colombianos">COP</abbr> / mensaje</span>
               </li>
               <li class="tarifa__total">
-                <span class="tarifa__concepto">Total del paquete</span>
+                <span class="tarifa__concepto" id="rates-whatsapp-total">Total del paquete</span>
                 <span class="tarifa__precio">$110.000 <abbr title="pesos colombianos">COP</abbr></span>
               </li>
             </ul>
@@ -116,22 +116,22 @@ require_once __DIR__ . '/includes/config.php';
         </div>
 
         <div class="tarifas__aclaraciones">
-          <h2 class="seccion__titulo">Aclaraciones y ejemplos</h2>
+          <h2 class="seccion__titulo" id="rates-clarifications-title">Aclaraciones y ejemplos</h2>
           <ul class="tarifas__lista-aclaraciones">
-            <li><strong>¿Qué se cobra?</strong> Cada envío a un destinatario cuenta como un (1) mensaje. Por ejemplo: un mismo comunicado enviado a 500 acudientes por email = 500 mensajes; si lo envías además por SMS a los mismos 500 = otros 500 mensajes.</li>
-            <li><strong>Tipo de mensaje:</strong> En <strong>email</strong> y <strong>SMS</strong> puedes usar mensajes abiertos (texto libre) para enviar a los usuarios el contenido que definas. En <strong>WhatsApp</strong> solo se usan notificaciones predeterminadas (plantillas aprobadas), ya que por políticas de META no está permitido enviar mensajes abiertos o de texto libre.</li>
-            <li><strong>Recomendación de uso:</strong> Te recomendamos usar <strong>email</strong> para comunicaciones de todo tipo (circulares, recordatorios, reportes). Reserva <strong>WhatsApp</strong> únicamente para lo más importante (alertas, avisos urgentes). Usa <strong>SMS</strong> solo en casos especiales, ya que son los más costosos por mensaje.</li>
-            <li><strong>Email:</strong> Un correo enviado a una dirección cuenta como un mensaje. Útil para circulares, recordatorios o reportes. Ejemplo: envío de boletines a 2.000 familias = 2.000 mensajes. Con paquete de 10.000 pagarías $10 por cada uno (total $100.000 COP estimado).</li>
-            <li><strong>SMS:</strong> El valor mostrado aplica por <strong>1 mensaje de hasta 150 caracteres</strong>. Cada vez que se supere esa cantidad, cuenta como un mensaje nuevo aunque vaya en el mismo envío (por ejemplo, un texto de 400 caracteres = 3 mensajes). Un mensaje de texto a un número celular = un mensaje. Ejemplo: recordatorio de reunión a 300 padres = 300 mensajes. Un paquete de 1.000 SMS tendría un total de $280.000 COP (estimado).</li>
-            <li><strong>WhatsApp:</strong> Cada notificación enviada por WhatsApp a un número cuenta como un mensaje. Solo notificaciones predeterminadas (plantillas). Ejemplo: aviso de entrega de notas a 800 contactos = 800 mensajes. Paquete de 1.000 = $110.000 COP total (estimado).</li>
-            <li><strong>Paquetes:</strong> Los paquetes son cantidades precompradas que se descuentan según uses (envío a envío). No tienen que usarse en un solo envío masivo: puedes gastar el paquete a lo largo del tiempo. Los totales por paquete que mostramos son referencia; el precio final puede variar como se indica arriba.</li>
+            <li id="rates-clarification-1"><strong>¿Qué se cobra?</strong> Cada envío a un destinatario cuenta como un (1) mensaje. Por ejemplo: un mismo comunicado enviado a 500 acudientes por email = 500 mensajes; si lo envías además por SMS a los mismos 500 = otros 500 mensajes.</li>
+            <li id="rates-clarification-2"><strong>Tipo de mensaje:</strong> En <strong>email</strong> y <strong>SMS</strong> puedes usar mensajes abiertos (texto libre) para enviar a los usuarios el contenido que definas. En <strong>WhatsApp</strong> solo se usan notificaciones predeterminadas (plantillas aprobadas), ya que por políticas de META no está permitido enviar mensajes abiertos o de texto libre.</li>
+            <li id="rates-clarification-3"><strong>Recomendación de uso:</strong> Te recomendamos usar <strong>email</strong> para comunicaciones de todo tipo (circulares, recordatorios, reportes). Reserva <strong>WhatsApp</strong> únicamente para lo más importante (alertas, avisos urgentes). Usa <strong>SMS</strong> solo en casos especiales, ya que son los más costosos por mensaje.</li>
+            <li id="rates-clarification-4"><strong>Email:</strong> Un correo enviado a una dirección cuenta como un mensaje. Útil para circulares, recordatorios o reportes. Ejemplo: envío de boletines a 2.000 familias = 2.000 mensajes. Con paquete de 10.000 pagarías $10 por cada uno (total $100.000 COP estimado).</li>
+            <li id="rates-clarification-5"><strong>SMS:</strong> El valor mostrado aplica por <strong>1 mensaje de hasta 150 caracteres</strong>. Cada vez que se supere esa cantidad, cuenta como un mensaje nuevo aunque vaya en el mismo envío (por ejemplo, un texto de 400 caracteres = 3 mensajes). Un mensaje de texto a un número celular = un mensaje. Ejemplo: recordatorio de reunión a 300 padres = 300 mensajes. Un paquete de 1.000 SMS tendría un total de $280.000 COP (estimado).</li>
+            <li id="rates-clarification-6"><strong>WhatsApp:</strong> Cada notificación enviada por WhatsApp a un número cuenta como un mensaje. Solo notificaciones predeterminadas (plantillas). Ejemplo: aviso de entrega de notas a 800 contactos = 800 mensajes. Paquete de 1.000 = $110.000 COP total (estimado).</li>
+            <li id="rates-clarification-7"><strong>Paquetes:</strong> Los paquetes son cantidades precompradas que se descuentan según uses (envío a envío). No tienen que usarse en un solo envío masivo: puedes gastar el paquete a lo largo del tiempo. Los totales por paquete que mostramos son referencia; el precio final puede variar como se indica arriba.</li>
           </ul>
         </div>
 
-        <p class="tarifas__nota">Para convenios institucionales, cotizaciones o paquetes a la medida, contáctanos por <a href="mailto:info@oderman-group.com">info@oderman-group.com</a> o <a href="https://wa.me/573006075800" target="_blank" rel="noopener noreferrer">WhatsApp</a>. Confirmaremos los precios vigentes al momento de tu solicitud.</p>
+        <p class="tarifas__nota" id="rates-note">Para convenios institucionales, cotizaciones o paquetes a la medida, contáctanos por <a href="mailto:info@oderman-group.com">info@oderman-group.com</a> o <a href="https://wa.me/573006075800" target="_blank" rel="noopener noreferrer">WhatsApp</a>. Confirmaremos los precios vigentes al momento de tu solicitud.</p>
 
         <p class="tarifas__cta">
-          <a href="https://plataformasintia.com" target="_blank" rel="noopener noreferrer" class="btn btn--sintia">Conocer Plataforma SINTIA</a>
+          <a href="https://plataformasintia.com" target="_blank" rel="noopener noreferrer" id="rates-cta" class="btn btn--sintia">Conocer Plataforma SINTIA</a>
         </p>
       </div>
     </section>

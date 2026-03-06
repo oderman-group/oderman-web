@@ -80,22 +80,22 @@ $pageData = [
     <!-- Módulos de SINTIA -->
     <section class="seccion seccion--clara">
       <div class="container-content">
-        <h2 class="seccion__titulo">Módulos de SINTIA</h2>
+        <h2 class="seccion__titulo" id="sintia-modules-title">Módulos de SINTIA</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg); margin-top: var(--spacing-xl);">
           <div style="padding: var(--spacing-lg); background: var(--color-bg-light); border-radius: 12px; box-shadow: var(--shadow-md); border: 1px solid var(--color-border);">
-            <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-sm); color: var(--color-primary);">Módulo Comunicativo</h3>
-            <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-md); line-height: 1.6;">Sistema de comunicación entre instituciones, docentes, estudiantes y acudientes. Envía mensajes, notificaciones y comunicados importantes.</p>
-            <a href="<?php echo url('sintia/tarifas-comunicativo'); ?>" class="btn btn--text" style="padding: 0;">Ver tarifas →</a>
+            <h3 id="sintia-module-comunicativo-title" style="font-size: 1.5rem; margin-bottom: var(--spacing-sm); color: var(--color-primary);">Módulo Comunicativo</h3>
+            <p id="sintia-module-comunicativo-desc" style="color: var(--color-text-secondary); margin-bottom: var(--spacing-md); line-height: 1.6;">Sistema de comunicación entre instituciones, docentes, estudiantes y acudientes. Envía mensajes, notificaciones y comunicados importantes.</p>
+            <a href="<?php echo url('sintia/tarifas-comunicativo'); ?>" id="sintia-module-comunicativo-link" class="btn btn--text" style="padding: 0;">Ver tarifas →</a>
           </div>
           <div style="padding: var(--spacing-lg); background: var(--color-bg-light); border-radius: 12px; box-shadow: var(--shadow-md); border: 1px solid var(--color-border);">
-            <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-sm); color: var(--color-primary);">AVA - Ambientes Virtuales</h3>
-            <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-md); line-height: 1.6;">Plataforma de aprendizaje virtual para complementar la educación presencial. Gestión de cursos, materiales y evaluaciones en línea.</p>
-            <a href="<?php echo url('sintia/ava'); ?>" class="btn btn--text" style="padding: 0;">Conocer más →</a>
+            <h3 id="sintia-module-ava-title" style="font-size: 1.5rem; margin-bottom: var(--spacing-sm); color: var(--color-primary);">AVA - Ambientes Virtuales</h3>
+            <p id="sintia-module-ava-desc" style="color: var(--color-text-secondary); margin-bottom: var(--spacing-md); line-height: 1.6;">Plataforma de aprendizaje virtual para complementar la educación presencial. Gestión de cursos, materiales y evaluaciones en línea.</p>
+            <a href="<?php echo url('sintia/ava'); ?>" id="sintia-module-ava-link" class="btn btn--text" style="padding: 0;">Conocer más →</a>
           </div>
           <div style="padding: var(--spacing-lg); background: var(--color-bg-light); border-radius: 12px; box-shadow: var(--shadow-md); border: 1px solid var(--color-border);">
-            <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-sm); color: var(--color-primary);">Demo para Colegios</h3>
-            <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-md); line-height: 1.6;">Solicita una demostración personalizada de la plataforma para tu institución. Conoce todas las funcionalidades de SINTIA.</p>
-            <a href="<?php echo url('sintia/demo'); ?>" class="btn btn--text" style="padding: 0;">Solicitar demo →</a>
+            <h3 id="sintia-module-demo-title" style="font-size: 1.5rem; margin-bottom: var(--spacing-sm); color: var(--color-primary);">Demo para Colegios</h3>
+            <p id="sintia-module-demo-desc" style="color: var(--color-text-secondary); margin-bottom: var(--spacing-md); line-height: 1.6;">Solicita una demostración personalizada de la plataforma para tu institución. Conoce todas las funcionalidades de SINTIA.</p>
+            <a href="<?php echo url('sintia/demo'); ?>" id="sintia-module-demo-link" class="btn btn--text" style="padding: 0;">Solicitar demo →</a>
           </div>
         </div>
       </div>
@@ -104,23 +104,23 @@ $pageData = [
     <!-- Características principales -->
     <section class="seccion">
       <div class="container-content">
-        <h2 class="seccion__titulo">Características principales</h2>
+        <h2 class="seccion__titulo" id="sintia-features-title">Características principales</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-lg); margin-top: var(--spacing-lg);">
           <div style="padding: var(--spacing-md); background: var(--color-bg-section); border-radius: 8px; box-shadow: var(--shadow-sm);">
-            <h3 style="font-size: 1.25rem; margin-bottom: var(--spacing-sm); color: var(--color-primary);">Gestión Académica</h3>
-            <p style="color: var(--color-text-secondary);">Administra calificaciones, asistencias, horarios y reportes académicos de forma centralizada.</p>
+            <h3 id="sintia-feature-academico-title" style="font-size: 1.25rem; margin-bottom: var(--spacing-sm); color: var(--color-primary);">Gestión Académica</h3>
+            <p id="sintia-feature-academico-desc" style="color: var(--color-text-secondary);">Administra calificaciones, asistencias, horarios y reportes académicos de forma centralizada.</p>
           </div>
           <div style="padding: var(--spacing-md); background: var(--color-bg-section); border-radius: 8px; box-shadow: var(--shadow-sm);">
-            <h3 style="font-size: 1.25rem; margin-bottom: var(--spacing-sm); color: var(--color-primary);">Comunicación</h3>
-            <p style="color: var(--color-text-secondary);">Mantén comunicación fluida entre todos los actores del proceso educativo.</p>
+            <h3 id="sintia-feature-comunicacion-title" style="font-size: 1.25rem; margin-bottom: var(--spacing-sm); color: var(--color-primary);">Comunicación</h3>
+            <p id="sintia-feature-comunicacion-desc" style="color: var(--color-text-secondary);">Mantén comunicación fluida entre todos los actores del proceso educativo.</p>
           </div>
           <div style="padding: var(--spacing-md); background: var(--color-bg-section); border-radius: 8px; box-shadow: var(--shadow-sm);">
-            <h3 style="font-size: 1.25rem; margin-bottom: var(--spacing-sm); color: var(--color-primary);">Pagos en Línea</h3>
-            <p style="color: var(--color-text-secondary);">Gestiona pagos de matrículas, pensiones y otros conceptos de forma segura.</p>
+            <h3 id="sintia-feature-pagos-title" style="font-size: 1.25rem; margin-bottom: var(--spacing-sm); color: var(--color-primary);">Pagos en Línea</h3>
+            <p id="sintia-feature-pagos-desc" style="color: var(--color-text-secondary);">Gestiona pagos de matrículas, pensiones y otros conceptos de forma segura.</p>
           </div>
           <div style="padding: var(--spacing-md); background: var(--color-bg-section); border-radius: 8px; box-shadow: var(--shadow-sm);">
-            <h3 style="font-size: 1.25rem; margin-bottom: var(--spacing-sm); color: var(--color-primary);">Seguimiento en Tiempo Real</h3>
-            <p style="color: var(--color-text-secondary);">Accede a información actualizada sobre el progreso académico de los estudiantes.</p>
+            <h3 id="sintia-feature-seguimiento-title" style="font-size: 1.25rem; margin-bottom: var(--spacing-sm); color: var(--color-primary);">Seguimiento en Tiempo Real</h3>
+            <p id="sintia-feature-seguimiento-desc" style="color: var(--color-text-secondary);">Accede a información actualizada sobre el progreso académico de los estudiantes.</p>
           </div>
         </div>
       </div>

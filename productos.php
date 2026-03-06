@@ -76,8 +76,8 @@ $pageData = [
               </div>
             </div>
             <div style="padding: var(--spacing-lg);">
-              <p style="color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--spacing-lg);">Plataforma integral que conecta instituciones, docentes, estudiantes y acudientes. Gestión académica, comunicados, calificaciones y pagos en tiempo real.</p>
-              <a href="<?php echo url('sintia'); ?>" class="btn btn--primary" style="width: 100%; text-align: center; display: block;">Conocer más</a>
+              <p id="products-sintia-desc" style="color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--spacing-lg);">Plataforma integral que conecta instituciones, docentes, estudiantes y acudientes. Gestión académica, comunicados, calificaciones y pagos en tiempo real.</p>
+              <a href="<?php echo url('sintia'); ?>" id="products-sintia-learn-more" class="btn btn--primary" style="width: 100%; text-align: center; display: block;">Conocer más</a>
             </div>
           </div>
 
@@ -91,8 +91,8 @@ $pageData = [
               </div>
             </div>
             <div style="padding: var(--spacing-lg);">
-              <p style="color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--spacing-lg);">Sistema de planificación de recursos empresariales (ERP) diseñado para optimizar los procesos de tu organización. Gestión integral de recursos, finanzas y operaciones.</p>
-              <button class="btn btn--secondary" style="width: 100%; text-align: center; display: block; cursor: not-allowed; opacity: 0.6;" disabled>Próximamente</button>
+              <p id="products-elisab-desc" style="color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--spacing-lg);">Sistema de planificación de recursos empresariales (ERP) diseñado para optimizar los procesos de tu organización. Gestión integral de recursos, finanzas y operaciones.</p>
+              <button id="products-elisab-coming-soon" class="btn btn--secondary" style="width: 100%; text-align: center; display: block; cursor: not-allowed; opacity: 0.6;" disabled>Próximamente</button>
             </div>
           </div>
 

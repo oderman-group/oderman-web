@@ -35,10 +35,10 @@ require_once __DIR__ . '/includes/config.php';
   <main class="pagina-interna pagina-campania">
     <section class="hero hero--campania">
       <div class="hero__contenedor">
-        <p class="hero__etiqueta">SINTIA · Colegios</p>
-        <h1 class="hero__titulo">SINTIA ya es la plataforma de varios colegios de Colombia. Llegamos a Bolívar y seguimos expandiéndonos a más regiones</h1>
-        <p class="hero__subtitulo">Todo integrado en una sola plataforma: directivos, docentes, acudientes y estudiantes en un solo ecosistema. Si en tu colegio tomas decisiones o puedes influir en ellas, te invitamos a agendar una demo en vivo. Sin compromiso.</p>
-        <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20para%20mi%20colegio.%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--hero">
+        <p class="hero__etiqueta" id="demo-tagline">SINTIA · Colegios</p>
+        <h1 class="hero__titulo" id="demo-title">SINTIA ya es la plataforma de varios colegios de Colombia. Llegamos a Bolívar y seguimos expandiéndonos a más regiones</h1>
+        <p class="hero__subtitulo" id="demo-subtitle">Todo integrado en una sola plataforma: directivos, docentes, acudientes y estudiantes en un solo ecosistema. Si en tu colegio tomas decisiones o puedes influir en ellas, te invitamos a agendar una demo en vivo. Sin compromiso.</p>
+        <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20para%20mi%20colegio.%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" id="demo-whatsapp-button" class="btn btn--whatsapp btn--hero">
           <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Quiero agendar una DEMO por WhatsApp
         </a>
@@ -47,14 +47,14 @@ require_once __DIR__ . '/includes/config.php';
 
     <section class="seccion seccion--clara">
       <div class="container-content">
-        <h2 class="seccion__titulo">Todo integrado en una sola plataforma</h2>
-        <p class="seccion__intro">Inscripciones, matrículas, cargas académicas, horarios, notas, cobros, pagos en línea, observador del alumno, comunicados con acudientes y ambiente virtual de aprendizaje: todo en un solo lugar. <strong>Directivos, docentes, acudientes y estudiantes en un solo ecosistema.</strong></p>
+        <h2 class="seccion__titulo" id="demo-integrated-title">Todo integrado en una sola plataforma</h2>
+        <p class="seccion__intro" id="demo-integrated-desc">Inscripciones, matrículas, cargas académicas, horarios, notas, cobros, pagos en línea, observador del alumno, comunicados con acudientes y ambiente virtual de aprendizaje: todo en un solo lugar. <strong>Directivos, docentes, acudientes y estudiantes en un solo ecosistema.</strong></p>
       </div>
     </section>
 
     <section class="seccion seccion--video">
       <div class="container-content">
-        <h2 class="seccion__titulo">Conoce SINTIA en video</h2>
+        <h2 class="seccion__titulo" id="demo-video-title">Conoce SINTIA en video</h2>
         <div class="video-card">
           <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/g2LSYPm7hR4" title="Video de SINTIA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -65,90 +65,90 @@ require_once __DIR__ . '/includes/config.php';
 
     <section id="academico" class="seccion campania-modulo">
       <div class="container-content">
-        <h2 class="seccion__titulo">Módulo académico</h2>
-        <p class="campania-modulo__desc">Inscripciones, matrículas, cargas académicas, horarios, notas y boletines. Gestiona grados, cursos, asignaturas y docentes desde un solo panel. Los estudiantes y acudientes consultan horarios y calificaciones en tiempo real; coordinación y rectoría tienen reportes y consolidados sin depender de planillas.</p>
+        <h2 class="seccion__titulo" id="demo-academico-title">Módulo académico</h2>
+        <p class="campania-modulo__desc" id="demo-academico-desc">Inscripciones, matrículas, cargas académicas, horarios, notas y boletines. Gestiona grados, cursos, asignaturas y docentes desde un solo panel. Los estudiantes y acudientes consultan horarios y calificaciones en tiempo real; coordinación y rectoría tienen reportes y consolidados sin depender de planillas.</p>
         <ul class="campania-modulo__lista">
-          <li>Inscripciones y matrículas</li>
-          <li>Cargas académicas y horarios</li>
-          <li>Notas y boletines</li>
-          <li>Reportes para coordinación y rectoría</li>
+          <li id="demo-academico-item-1">Inscripciones y matrículas</li>
+          <li id="demo-academico-item-2">Cargas académicas y horarios</li>
+          <li id="demo-academico-item-3">Notas y boletines</li>
+          <li id="demo-academico-item-4">Reportes para coordinación y rectoría</li>
         </ul>
         <p class="campania-modulo__cta">
-          <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20M%C3%B3dulo%20acad%C3%A9mico%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">Consultar por WhatsApp</a>
+          <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20M%C3%B3dulo%20acad%C3%A9mico%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" id="demo-academico-cta" class="btn btn--whatsapp">Consultar por WhatsApp</a>
         </p>
       </div>
     </section>
 
     <section id="financiero" class="seccion seccion--clara campania-modulo">
       <div class="container-content">
-        <h2 class="seccion__titulo">Módulo financiero</h2>
-        <p class="campania-modulo__desc">Cobros, abonos, pagos en línea y cartera. Los acudientes pueden ver cuotas, pagar por internet y llevar el historial de pagos. La institución centraliza la información financiera, reduce el manejo de efectivo y tiene reportes de cartera y recaudo al día.</p>
+        <h2 class="seccion__titulo" id="demo-financiero-title">Módulo financiero</h2>
+        <p class="campania-modulo__desc" id="demo-financiero-desc">Cobros, abonos, pagos en línea y cartera. Los acudientes pueden ver cuotas, pagar por internet y llevar el historial de pagos. La institución centraliza la información financiera, reduce el manejo de efectivo y tiene reportes de cartera y recaudo al día.</p>
         <ul class="campania-modulo__lista">
-          <li>Cobros y abonos</li>
-          <li>Pagos en línea</li>
-          <li>Cartera y reportes de recaudo</li>
+          <li id="demo-financiero-item-1">Cobros y abonos</li>
+          <li id="demo-financiero-item-2">Pagos en línea</li>
+          <li id="demo-financiero-item-3">Cartera y reportes de recaudo</li>
         </ul>
         <p class="campania-modulo__cta">
-          <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20M%C3%B3dulo%20financiero%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">Consultar por WhatsApp</a>
+          <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20M%C3%B3dulo%20financiero%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" id="demo-financiero-cta" class="btn btn--whatsapp">Consultar por WhatsApp</a>
         </p>
       </div>
     </section>
 
     <section id="convivencia" class="seccion campania-modulo">
       <div class="container-content">
-        <h2 class="seccion__titulo">Módulo de convivencia</h2>
-        <p class="campania-modulo__desc">Observador del alumno, seguimiento y reportes. Registra incidencias, seguimientos disciplinarios y logros de convivencia en un solo lugar. Coordinación y docentes tienen el historial del estudiante a la mano; los reportes facilitan reuniones con acudientes y cumplimiento normativo.</p>
+        <h2 class="seccion__titulo" id="demo-convivencia-title">Módulo de convivencia</h2>
+        <p class="campania-modulo__desc" id="demo-convivencia-desc">Observador del alumno, seguimiento y reportes. Registra incidencias, seguimientos disciplinarios y logros de convivencia en un solo lugar. Coordinación y docentes tienen el historial del estudiante a la mano; los reportes facilitan reuniones con acudientes y cumplimiento normativo.</p>
         <ul class="campania-modulo__lista">
-          <li>Observador del alumno</li>
-          <li>Seguimiento y reportes de convivencia</li>
+          <li id="demo-convivencia-item-1">Observador del alumno</li>
+          <li id="demo-convivencia-item-2">Seguimiento y reportes de convivencia</li>
         </ul>
         <p class="campania-modulo__cta">
-          <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20M%C3%B3dulo%20convivencia%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">Consultar por WhatsApp</a>
+          <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20M%C3%B3dulo%20convivencia%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" id="demo-convivencia-cta" class="btn btn--whatsapp">Consultar por WhatsApp</a>
         </p>
       </div>
     </section>
 
     <section id="comunicacion" class="seccion seccion--clara campania-modulo">
       <div class="container-content">
-        <h2 class="seccion__titulo">Módulo de comunicación</h2>
-        <p class="campania-modulo__desc">Comunicados con acudientes y toda la comunidad por <strong>email</strong>, <strong>SMS</strong> y <strong>WhatsApp</strong>. Envía circulares, recordatorios y avisos desde la plataforma; los mensajes llegan directo al celular o al correo. Menos papeles, menos “no me enteré” y más cercanía con las familias.</p>
+        <h2 class="seccion__titulo" id="demo-comunicacion-title">Módulo de comunicación</h2>
+        <p class="campania-modulo__desc" id="demo-comunicacion-desc">Comunicados con acudientes y toda la comunidad por <strong>email</strong>, <strong>SMS</strong> y <strong>WhatsApp</strong>. Envía circulares, recordatorios y avisos desde la plataforma; los mensajes llegan directo al celular o al correo. Menos papeles, menos "no me enteré" y más cercanía con las familias.</p>
         <ul class="campania-modulo__lista">
-          <li>Email, SMS y notificaciones WhatsApp</li>
-          <li>Comunicados masivos o por grupo</li>
+          <li id="demo-comunicacion-item-1">Email, SMS y notificaciones WhatsApp</li>
+          <li id="demo-comunicacion-item-2">Comunicados masivos o por grupo</li>
         </ul>
         <p class="campania-modulo__cta">
-          <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20M%C3%B3dulo%20comunicaci%C3%B3n%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">Consultar por WhatsApp</a>
+          <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20M%C3%B3dulo%20comunicaci%C3%B3n%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" id="demo-comunicacion-cta" class="btn btn--whatsapp">Consultar por WhatsApp</a>
         </p>
       </div>
     </section>
 
     <section id="ava" class="seccion campania-modulo">
       <div class="container-content">
-        <h2 class="seccion__titulo">AVA – Ambiente virtual de aprendizaje</h2>
-        <p class="campania-modulo__desc">Evaluaciones en línea, tareas en casa, foros de discusión y control de clases y ausencias. Los estudiantes realizan pruebas y tareas desde la plataforma; docentes y coordinación tienen todo centralizado. Opcional por módulo o en paquete.</p>
+        <h2 class="seccion__titulo" id="demo-ava-title">AVA – Ambiente virtual de aprendizaje</h2>
+        <p class="campania-modulo__desc" id="demo-ava-desc">Evaluaciones en línea, tareas en casa, foros de discusión y control de clases y ausencias. Los estudiantes realizan pruebas y tareas desde la plataforma; docentes y coordinación tienen todo centralizado. Opcional por módulo o en paquete.</p>
         <ul class="campania-modulo__lista">
-          <li>Evaluaciones online</li>
-          <li>Tareas en casa</li>
-          <li>Foros de discusión</li>
-          <li>Clases y ausencias</li>
+          <li id="demo-ava-item-1">Evaluaciones online</li>
+          <li id="demo-ava-item-2">Tareas en casa</li>
+          <li id="demo-ava-item-3">Foros de discusión</li>
+          <li id="demo-ava-item-4">Clases y ausencias</li>
         </ul>
         <p class="campania-modulo__cta">
-          <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20AVA%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">Consultar por WhatsApp</a>
+          <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20AVA%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" id="demo-ava-cta" class="btn btn--whatsapp">Consultar por WhatsApp</a>
         </p>
       </div>
     </section>
 
     <section id="demo" class="seccion seccion--clara seccion--demo">
       <div class="container-content">
-        <h2 class="seccion__titulo">Agenda tu demo en vivo</h2>
-        <p class="seccion__intro">Si en tu colegio tomas decisiones o puedes influir en ellas (rectoría, coordinación, dirección académica o administrativa), te invitamos a agendar una demo: te mostramos la plataforma y te aclaramos todas las dudas. <strong>Sin compromiso.</strong></p>
-        <p>Escribe por WhatsApp: <strong>«Me interesa una DEMO de SINTIA»</strong>, indicando el nombre del colegio y, si quieres, tu municipio o región, al número <a href="tel:+573006075800">300 607 5800</a>.</p>
-        <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--demo">Escribir por WhatsApp al 300 607 5800</a>
+        <h2 class="seccion__titulo" id="demo-demo-title">Agenda tu demo en vivo</h2>
+        <p class="seccion__intro" id="demo-demo-desc">Si en tu colegio tomas decisiones o puedes influir en ellas (rectoría, coordinación, dirección académica o administrativa), te invitamos a agendar una demo: te mostramos la plataforma y te aclaramos todas las dudas. <strong>Sin compromiso.</strong></p>
+        <p id="demo-demo-text">Escribe por WhatsApp: <strong>«Me interesa una DEMO de SINTIA»</strong>, indicando el nombre del colegio y, si quieres, tu municipio o región, al número <a href="tel:+573006075800">300 607 5800</a>.</p>
+        <a href="https://wa.me/573006075800?text=Me%20interesa%20una%20DEMO%20de%20SINTIA%20-%20Colegio%3A%20" target="_blank" rel="noopener noreferrer" id="demo-demo-button" class="btn btn--whatsapp btn--demo">Escribir por WhatsApp al 300 607 5800</a>
         <div class="demo-contacto">
-          <p><strong>Información de contacto</strong></p>
-          <p>Teléfono: <a href="tel:+573006075800">300 607 5800</a></p>
-          <p>Correo: <a href="mailto:info@plataformasintia.com">info@plataformasintia.com</a></p>
-          <p>Web: <a href="https://plataformasintia.com" target="_blank" rel="noopener noreferrer">plataformasintia.com</a></p>
+          <p><strong id="demo-contact-title">Información de contacto</strong></p>
+          <p id="demo-contact-phone">Teléfono: <a href="tel:+573006075800">300 607 5800</a></p>
+          <p id="demo-contact-email">Correo: <a href="mailto:info@plataformasintia.com">info@plataformasintia.com</a></p>
+          <p id="demo-contact-web">Web: <a href="https://plataformasintia.com" target="_blank" rel="noopener noreferrer">plataformasintia.com</a></p>
         </div>
       </div>
     </section>
