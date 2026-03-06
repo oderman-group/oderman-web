@@ -57,85 +57,12 @@ $pageData = [
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer__contenedor">
-      <div class="footer__grid">
-        <div class="footer__bloque">
-          <h3 class="footer__titulo" id="footer-company">Empresa</h3>
-          <ul class="footer__lista">
-            <li><a href="<?php echo url(); ?>" id="footer-link-home">Inicio</a></li>
-            <li><a href="<?php echo url('nosotros'); ?>" id="footer-link-about">Nosotros</a></li>
-            <li><a href="<?php echo url(); ?>#servicios" id="footer-link-services">Servicios</a></li>
-            <li><a href="<?php echo url('productos'); ?>" id="footer-link-products">Productos</a></li>
-            <li><a href="<?php echo url('nosotros'); ?>#mision" id="footer-link-mission">Misión</a></li>
-            <li><a href="<?php echo url('nosotros'); ?>#vision" id="footer-link-vision">Visión</a></li>
-            <li><a href="<?php echo url('nosotros'); ?>#valores" id="footer-link-values">Valores</a></li>
-            <li><a href="<?php echo url(); ?>#contacto" id="footer-link-contact">Contacto</a></li>
-            <li><a href="https://oderman-group.com/" target="_blank" rel="noopener noreferrer" id="footer-link-corporate">Sitio corporativo <span class="footer__externo" aria-label="Abre en nueva pestaña">↗</span></a></li>
-          </ul>
-        </div>
-        <div class="footer__bloque">
-          <h3 class="footer__titulo" id="footer-sintia">Ecosistema SINTIA</h3>
-          <ul class="footer__lista">
-            <li><a href="<?php echo url('sintia'); ?>" id="footer-link-sintia-ecosystem">Ecosistema SINTIA</a></li>
-            <li><a href="<?php echo url('sintia/tarifas-comunicativo'); ?>" id="footer-link-rates">Tarifas módulo comunicativo</a></li>
-            <li><a href="<?php echo url('sintia/ava'); ?>" id="footer-link-ava">AVA - Ambientes Virtuales</a></li>
-            <li><a href="<?php echo url('sintia/demo'); ?>" id="footer-link-demo">Demo para colegios</a></li>
-            <li><a href="https://plataformasintia.com" target="_blank" rel="noopener noreferrer" id="footer-link-platform">Plataforma SINTIA <span class="footer__externo" aria-label="Abre en nueva pestaña">↗</span></a></li>
-          </ul>
-        </div>
-        <div class="footer__bloque">
-          <h3 class="footer__titulo" id="footer-contact">Contacto</h3>
-          <ul class="footer__lista footer__lista--contacto">
-            <li><a href="mailto:info@oderman-group.com">info@oderman-group.com</a></li>
-            <li><a href="tel:+573006075800">+57 300 607 5800</a></li>
-            <li><a href="https://wa.me/573006075800" target="_blank" rel="noopener noreferrer" class="footer__wa">WhatsApp</a></li>
-          </ul>
-        </div>
-        <div class="footer__bloque footer__bloque--redes">
-          <h3 class="footer__titulo" id="footer-follow">Síguenos</h3>
-          <div class="footer__redes">
-            <a href="https://www.facebook.com/plataformasintia/" target="_blank" rel="noopener noreferrer" class="footer__red" aria-label="Facebook SINTIA">Facebook</a>
-            <a href="https://x.com/platsintia" target="_blank" rel="noopener noreferrer" class="footer__red" aria-label="X SINTIA">X</a>
-            <a href="https://www.instagram.com/platsintia/" target="_blank" rel="noopener noreferrer" class="footer__red" aria-label="Instagram SINTIA">Instagram</a>
-            <a href="https://www.youtube.com/c/Plataformasintia/videos" target="_blank" rel="noopener noreferrer" class="footer__red" aria-label="YouTube SINTIA">YouTube</a>
-            <a href="https://co.linkedin.com/company/oderman-group-sas" target="_blank" rel="noopener noreferrer" class="footer__red" aria-label="LinkedIn Oderman Group">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer__baja">
-        <p class="footer__firma">© <span id="anio"></span> ODERMAN GROUP SAS. <span id="footer-rights">Todos los derechos reservados.</span></p>
-        <p class="footer__dominio">oderman.com.co</p>
-      </div>
-      <div class="footer__legal">
-        <a href="<?php echo url('privacidad'); ?>" id="footer-privacy">Política de Privacidad</a>
-        <span>|</span>
-        <a href="<?php echo url('terminos'); ?>" id="footer-terms">Términos y Condiciones</a>
-        <span>|</span>
-        <a href="<?php echo url('cookies'); ?>" id="footer-cookies">Política de Cookies</a>
-      </div>
-    </div>
-  </footer>
+  <?php include __DIR__ . '/includes/footer.php'; ?>
 
   <!-- Scripts -->
   <script src="<?php echo asset('js/translations.js'); ?>"></script>
   <script src="<?php echo asset('js/language.js'); ?>"></script>
   <script src="<?php echo asset('js/cookies.js'); ?>"></script>
-  <script>
-    (function() {
-      document.getElementById('anio').textContent = new Date().getFullYear();
-      
-      var btn = document.querySelector('.header__menu-btn');
-      var navWrapper = document.querySelector('.header__nav-wrapper');
-      if (btn && navWrapper) {
-        btn.addEventListener('click', function() {
-          var isOpen = navWrapper.getAttribute('aria-hidden') === 'false';
-          navWrapper.setAttribute('aria-hidden', !isOpen);
-          btn.setAttribute('aria-expanded', !isOpen);
-          btn.setAttribute('aria-label', !isOpen ? 'Cerrar menú' : 'Abrir menú');
-        });
-      }
-    })();
-  </script>
+  <script src="<?php echo asset('js/main.js'); ?>"></script>
 </body>
 </html>
