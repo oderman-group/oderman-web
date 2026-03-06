@@ -41,37 +41,7 @@ $pageData = [
   <link rel="icon" type="image/png" href="<?php echo asset('img/logooderman.png'); ?>">
 </head>
 <body>
-  <header class="header">
-    <div class="header__contenedor">
-      <a href="<?php echo url(); ?>" class="header__logo" aria-label="ODERMAN GROUP SAS - Inicio">
-        <img src="<?php echo asset('img/logooderman.png'); ?>" alt="ODERMAN GROUP SAS Logo" class="header__logo-img">
-        <div class="header__logo-text">
-          <span class="header__logo-texto">ODERMAN</span>
-          <span class="header__logo-sas">GROUP SAS</span>
-        </div>
-      </a>
-      <div class="header__nav-wrapper" aria-hidden="true">
-        <nav class="header__nav" aria-label="Navegación principal">
-          <a href="<?php echo url(); ?>" id="nav-home">Inicio</a>
-          <a href="<?php echo url('nosotros'); ?>" id="nav-about">Nosotros</a>
-          <a href="<?php echo url(); ?>#servicios" id="nav-services">Servicios</a>
-          <a href="<?php echo url('productos'); ?>" id="nav-products">Productos</a>
-          <a href="<?php echo url(); ?>#contacto" id="nav-contact">Contacto</a>
-        </nav>
-        <div class="language-selector">
-          <select id="language-selector" aria-label="Seleccionar idioma">
-            <option value="es">ES</option>
-            <option value="en">EN</option>
-          </select>
-        </div>
-      </div>
-      <button class="header__menu-btn" aria-label="Abrir menú" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
+  <?php include __DIR__ . '/includes/header.php'; ?>
 
   <main>
     <section class="hero hero--404" style="min-height: 70vh; display: flex; align-items: center; justify-content: center;">

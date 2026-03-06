@@ -32,6 +32,16 @@
     RewriteRule ^cookies/?$ cookies.php [L]
     RewriteRule ^cookie-policy/?$ cookies.php [L]
 
+    # URLs amigables - Blog
+    RewriteRule ^blog/([a-z0-9-]+)/?$ articulo.php?slug=$1&tipo=blog [L,QSA]
+    RewriteRule ^blog/?$ blog.php [L]
+
+    # URLs amigables - Noticias
+    RewriteRule ^noticias/([a-z0-9-]+)/?$ articulo.php?slug=$1&tipo=noticias [L,QSA]
+    RewriteRule ^noticias/?$ noticias.php [L]
+    RewriteRule ^news/([a-z0-9-]+)/?$ articulo.php?slug=$1&tipo=noticias [L,QSA]
+    RewriteRule ^news/?$ noticias.php [L]
+
     # URLs amigables - Páginas principales
     RewriteRule ^nosotros/?$ nosotros.php [L]
     RewriteRule ^about/?$ nosotros.php [L]

@@ -1,6 +1,18 @@
 <?php
 // Incluir configuración
 require_once __DIR__ . '/includes/config.php';
+require_once __DIR__ . '/includes/seo.php';
+
+$pageData = [
+    'title' => 'ODERMAN GROUP SAS | Desarrollo de Software a la Medida',
+    'description' => 'ODERMAN GROUP SAS desarrolla software a la medida y soluciones tecnológicas innovadoras. Conoce SINTIA, nuestro ecosistema educativo integral.',
+    'keywords' => 'desarrollo de software, software a la medida, SINTIA, ecosistema educativo, ODERMAN GROUP SAS, Colombia',
+    'url' => url(),
+    'alternate' => [
+        'es' => url(),
+        'en' => url() . '?lang=en'
+    ]
+];
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -85,35 +97,7 @@ require_once __DIR__ . '/includes/config.php';
   </script>
 </head>
 <body>
-  <header class="header">
-    <div class="header__contenedor">
-      <a href="<?php echo url(); ?>" class="header__logo" aria-label="ODERMAN GROUP SAS - Inicio">
-        <img src="<?php echo asset('img/logooderman.png'); ?>" alt="ODERMAN GROUP SAS Logo" class="header__logo-img">
-        <div class="header__logo-text">
-          <span class="header__logo-texto">ODERMAN</span>
-          <span class="header__logo-sas">GROUP SAS</span>
-        </div>
-      </a>
-      <div class="header__nav-wrapper" aria-hidden="true">
-        <nav class="header__nav" aria-label="Navegación principal">
-          <a href="<?php echo url(); ?>" id="nav-home">Inicio</a>
-          <a href="<?php echo url('nosotros'); ?>" id="nav-about">Nosotros</a>
-          <a href="<?php echo url(); ?>#servicios" id="nav-services">Servicios</a>
-          <a href="<?php echo url('productos'); ?>" id="nav-products">Productos</a>
-          <a href="<?php echo url(); ?>#contacto" id="nav-contact">Contacto</a>
-        </nav>
-        <div class="language-selector">
-          <select id="language-selector" aria-label="Seleccionar idioma">
-            <option value="es">ES</option>
-            <option value="en">EN</option>
-          </select>
-        </div>
-      </div>
-      <button type="button" class="header__menu-btn" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+  <?php include __DIR__ . '/includes/header.php'; ?>
 
   <main>
     <section class="hero">
@@ -141,7 +125,7 @@ require_once __DIR__ . '/includes/config.php';
     <section id="servicios" class="seccion seccion--clara">
       <div class="container-content">
         <h2 class="seccion__titulo" id="services-title">Nuestros Servicios</h2>
-        <p class="seccion__intro" id="services-intro">Ofrecemos servicios profesionales de desarrollo de software a la medida, consultoría tecnológica y soluciones empresariales adaptadas a las necesidades específicas de cada cliente.</p>
+        <p class="seccion__intro" id="services-intro">La seguridad y la eficiencia son las demandas más claras a nivel global, impulsadas por tecnologías que protejan datos y mejoren operaciones. En Oderman Group, ofrecemos servicios profesionales de desarrollo de software a la medida que responden a estas necesidades críticas del mercado.</p>
         <div class="imagenes-grid">
           <div class="imagenes-grid__item">
             <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Desarrollo de Software" loading="lazy">
@@ -155,17 +139,165 @@ require_once __DIR__ . '/includes/config.php';
         </div>
         <div class="valores-lista valores-lista--core">
           <li>
-            <span class="valores-lista__nombre" id="service-software-name">Desarrollo de Software</span>
-            <span class="valores-lista__desc" id="service-software-desc">Desarrollamos aplicaciones web y móviles personalizadas que se adaptan a los procesos únicos de tu organización.</span>
+            <span class="valores-lista__nombre" id="service-security-name">Seguridad Informática</span>
+            <span class="valores-lista__desc" id="service-security-desc">Implementamos soluciones robustas de ciberseguridad que protegen tus datos y cumplen con normativas de privacidad. Garantizamos la integridad y confidencialidad de tu información crítica.</span>
           </li>
           <li>
-            <span class="valores-lista__nombre" id="service-consulting-name">Consultoría Tecnológica</span>
-            <span class="valores-lista__desc" id="service-consulting-desc">Asesoramos en la transformación digital, arquitectura de software y mejores prácticas de desarrollo.</span>
+            <span class="valores-lista__nombre" id="service-it-management-name">Gestión de TI</span>
+            <span class="valores-lista__desc" id="service-it-management-desc">Optimizamos tus procesos de negocio, reducimos costos y mejoramos la eficiencia operativa mediante la gestión estratégica de tecnologías de información adaptadas a tus necesidades.</span>
           </li>
           <li>
-            <span class="valores-lista__nombre" id="service-support-name">Soporte y Mantenimiento</span>
-            <span class="valores-lista__desc" id="service-support-desc">Proporcionamos soporte continuo y mantenimiento para garantizar el óptimo funcionamiento de tus sistemas.</span>
+            <span class="valores-lista__nombre" id="service-ai-name">Inteligencia Artificial</span>
+            <span class="valores-lista__desc" id="service-ai-desc">Desarrollamos soluciones con IA que automatizan procesos, mejoran la toma de decisiones y potencian la competitividad de tu organización mediante tecnologías de vanguardia.</span>
           </li>
+          <li>
+            <span class="valores-lista__nombre" id="service-architecture-name">Arquitectura de TI</span>
+            <span class="valores-lista__desc" id="service-architecture-desc">Diseñamos arquitecturas de software escalables, flexibles y basadas en la nube que se adaptan al crecimiento de tu empresa, garantizando rentabilidad y rendimiento óptimo.</span>
+          </li>
+          <li>
+            <span class="valores-lista__nombre" id="service-crm-name">Gestión de Relaciones con Clientes (CRM)</span>
+            <span class="valores-lista__desc" id="service-crm-desc">Creamos sistemas CRM personalizados que optimizan la interacción con tus clientes, mejoran el seguimiento comercial y potencian las ventas mediante herramientas de gestión inteligente.</span>
+          </li>
+          <li>
+            <span class="valores-lista__nombre" id="service-finance-name">Contabilidad y Finanzas</span>
+            <span class="valores-lista__desc" id="service-finance-desc">Desarrollamos sistemas de gestión financiera y contable que centralizan operaciones, automatizan procesos y proporcionan reportes precisos para una toma de decisiones informada.</span>
+          </li>
+          <li>
+            <span class="valores-lista__nombre" id="service-marketing-name">Marketing Digital</span>
+            <span class="valores-lista__desc" id="service-marketing-desc">Implementamos plataformas y herramientas de marketing digital que optimizan tus campañas, mejoran la conversión y maximizan el retorno de inversión en tus estrategias comerciales.</span>
+          </li>
+          <li>
+            <span class="valores-lista__nombre" id="service-cloud-name">Soluciones en la Nube</span>
+            <span class="valores-lista__desc" id="service-cloud-desc">Ofrecemos soluciones basadas en la nube con flexibilidad, escalabilidad y rentabilidad, permitiendo que tu negocio crezca sin limitaciones de infraestructura física.</span>
+          </li>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Seguridad y Certificaciones -->
+    <section id="seguridad" class="seccion seccion--clara">
+      <div class="container-content">
+        <div class="seccion__icono" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l7 4v6c0 5-3.5 9.74-7 10-3.5-.26-7-5-7-10V6l7-4zm0 2.3L7 6.9V12c0 3.92 2.54 7.74 5 8.02 2.46-.28 5-4.1 5-8.02V6.9l-5-2.6zm-1 6.2l-1.41 1.41L11 13.32l3.41-3.41L15.82 11 11 15.82 8.18 13l.82-.5z"/>
+          </svg>
+        </div>
+        <h2 class="seccion__titulo" id="security-commitment-title">Seguridad y Certificaciones</h2>
+        <p class="seccion__intro" id="security-commitment-intro">Nos interesa y garantizamos la seguridad de las tecnologías, software y aplicaciones que desarrollamos. Trabajamos con buenas prácticas, control de calidad y un enfoque preventivo para reducir riesgos y fortalecer la confianza.</p>
+
+        <div class="sintia-grid certifications">
+          <div class="sintia-grid__content">
+            <ul class="valores-lista valores-lista--complementarios security-points" role="list">
+              <li>
+                <strong id="security-point-1-title">Seguridad por diseño</strong>
+                <span id="security-point-1-desc">Incorporamos controles desde el inicio: revisión de código, buenas prácticas y mitigación de vulnerabilidades en cada entrega.</span>
+              </li>
+              <li>
+                <strong id="security-point-2-title">Protección de datos y cumplimiento</strong>
+                <span id="security-point-2-desc">Aplicamos medidas para proteger información sensible y apoyar el cumplimiento de normativas de privacidad, según el contexto de tu organización.</span>
+              </li>
+              <li>
+                <strong id="security-point-3-title">Calidad, mejora continua y sostenibilidad</strong>
+                <span id="security-point-3-desc">Nuestros procesos están orientados a resultados consistentes, mejora continua y operación responsable.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sintia-grid__image certifications__badges" aria-label="Certificaciones ISO">
+            <div class="cert-badge">
+              <img src="<?php echo asset('img/certificaciones/iso-9001.svg'); ?>" alt="Certificación ISO 9001" loading="lazy" onerror="this.style.display='none'">
+              <div class="cert-badge__text">
+                <strong id="iso-9001-title">ISO 9001</strong>
+                <span id="iso-9001-desc">Sistema de Gestión de Calidad</span>
+              </div>
+            </div>
+            <div class="cert-badge">
+              <img src="<?php echo asset('img/certificaciones/iso-14001.svg'); ?>" alt="Certificación ISO 14001" loading="lazy" onerror="this.style.display='none'">
+              <div class="cert-badge__text">
+                <strong id="iso-14001-title">ISO 14001</strong>
+                <span id="iso-14001-desc">Sistema de Gestión Ambiental</span>
+              </div>
+            </div>
+            <div class="cert-badge">
+              <img src="<?php echo asset('img/certificaciones/iso-27001.svg'); ?>" alt="Certificación ISO 27001" loading="lazy" onerror="this.style.display='none'">
+              <div class="cert-badge__text">
+                <strong id="iso-27001-title">ISO 27001</strong>
+                <span id="iso-27001-desc">Sistema de Gestión de Seguridad de la Información</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Cobertura / Países -->
+    <section id="cobertura" class="seccion">
+      <div class="container-content">
+        <div class="seccion__icono" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2zm7.93 9h-3.17a15.5 15.5 0 0 0-1.07-4.12A8.03 8.03 0 0 1 19.93 11zM12 4c.83 0 2.34 1.86 3.07 5H8.93C9.66 5.86 11.17 4 12 4zM4.07 13h3.17c.2 1.49.61 2.9 1.2 4.12A8.03 8.03 0 0 1 4.07 13zM7.24 11H4.07a8.03 8.03 0 0 1 4.37-4.12A15.5 15.5 0 0 0 7.24 11zm1.69 0h6.14c.08.66.13 1.33.13 2s-.05 1.34-.13 2H8.93A16.4 16.4 0 0 1 8.8 13c0-.67.05-1.34.13-2zm.0 6h6.14c-.73 3.14-2.24 5-3.07 5-.83 0-2.34-1.86-3.07-5zm7.63.12c.59-1.22 1-2.63 1.2-4.12h3.17a8.03 8.03 0 0 1-4.37 4.12z"/>
+          </svg>
+        </div>
+        <h2 class="seccion__titulo" id="coverage-title">Cobertura y alcance</h2>
+        <p class="seccion__intro" id="coverage-intro">Tenemos el interés y la capacidad de trabajar con organizaciones en estos países, acompañando proyectos de software, consultoría y transformación digital de manera remota o híbrida.</p>
+
+        <div class="coverage-countries" role="list" aria-label="Países con los que podemos trabajar">
+          <div class="country-card" role="listitem">
+            <div class="country-card__flag">🇨🇴</div>
+            <h3 class="country-card__name" id="coverage-country-colombia">Colombia</h3>
+          </div>
+          <div class="country-card" role="listitem">
+            <div class="country-card__flag">🇦🇷</div>
+            <h3 class="country-card__name" id="coverage-country-argentina">Argentina</h3>
+          </div>
+          <div class="country-card" role="listitem">
+            <div class="country-card__flag">🇧🇷</div>
+            <h3 class="country-card__name" id="coverage-country-brazil">Brasil</h3>
+          </div>
+          <div class="country-card" role="listitem">
+            <div class="country-card__flag">🇨🇦</div>
+            <h3 class="country-card__name" id="coverage-country-canada">Canadá</h3>
+          </div>
+          <div class="country-card" role="listitem">
+            <div class="country-card__flag">🏝️</div>
+            <h3 class="country-card__name" id="coverage-country-caribbean">Caribe</h3>
+          </div>
+          <div class="country-card" role="listitem">
+            <div class="country-card__flag">🇨🇱</div>
+            <h3 class="country-card__name" id="coverage-country-chile">Chile</h3>
+          </div>
+          <div class="country-card" role="listitem">
+            <div class="country-card__flag">🇨🇷</div>
+            <h3 class="country-card__name" id="coverage-country-costa-rica">Costa Rica</h3>
+          </div>
+          <div class="country-card" role="listitem">
+            <div class="country-card__flag">🇪🇨</div>
+            <h3 class="country-card__name" id="coverage-country-ecuador">Ecuador</h3>
+          </div>
+          <div class="country-card" role="listitem">
+            <div class="country-card__flag">🇪🇸</div>
+            <h3 class="country-card__name" id="coverage-country-spain">España</h3>
+          </div>
+          <div class="country-card" role="listitem">
+            <div class="country-card__flag">🇺🇸</div>
+            <h3 class="country-card__name" id="coverage-country-usa">Estados Unidos</h3>
+          </div>
+          <div class="country-card" role="listitem">
+            <div class="country-card__flag">🇲🇽</div>
+            <h3 class="country-card__name" id="coverage-country-mexico">México</h3>
+          </div>
+          <div class="country-card" role="listitem">
+            <div class="country-card__flag">🇵🇦</div>
+            <h3 class="country-card__name" id="coverage-country-panama">Panamá</h3>
+          </div>
+          <div class="country-card" role="listitem">
+            <div class="country-card__flag">🇵🇪</div>
+            <h3 class="country-card__name" id="coverage-country-peru">Perú</h3>
+          </div>
+          <div class="country-card" role="listitem">
+            <div class="country-card__flag">🇬🇹🇭🇳🇸🇻</div>
+            <h3 class="country-card__name" id="coverage-country-northern-triangle">Triángulo Norte</h3>
+          </div>
         </div>
       </div>
     </section>
@@ -179,49 +311,55 @@ require_once __DIR__ . '/includes/config.php';
         <div class="clientes__slider">
           <div class="clientes__wrapper">
             <div class="clientes__track" id="clientes-track-1">
-              <!-- Placeholder images - Reemplazar con logos reales -->
+              <!-- Logos reales de clientes -->
               <div class="clientes__item">
-                <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=200&h=120&fit=crop" alt="Cliente 1" class="clientes__logo">
+                <img src="<?php echo asset('img/clients/bydeluxe.webp'); ?>" alt="ByDeluxe" class="clientes__logo" loading="lazy">
               </div>
               <div class="clientes__item">
-                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=200&h=120&fit=crop" alt="Cliente 2" class="clientes__logo">
+                <img src="<?php echo asset('img/clients/colegioemmanuelsur.png'); ?>" alt="Colegio Emmanuel Sur" class="clientes__logo" loading="lazy">
               </div>
               <div class="clientes__item">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&h=120&fit=crop" alt="Cliente 3" class="clientes__logo">
+                <img src="<?php echo asset('img/clients/ic&t.jpg'); ?>" alt="IC&T" class="clientes__logo" loading="lazy">
               </div>
               <div class="clientes__item">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=200&h=120&fit=crop" alt="Cliente 4" class="clientes__logo">
+                <img src="<?php echo asset('img/clients/icolven.jpg'); ?>" alt="Icolven" class="clientes__logo" loading="lazy">
               </div>
               <div class="clientes__item">
-                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=200&h=120&fit=crop" alt="Cliente 5" class="clientes__logo">
+                <img src="<?php echo asset('img/clients/jmequipos.png'); ?>" alt="JM Equipos" class="clientes__logo" loading="lazy">
               </div>
               <div class="clientes__item">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&h=120&fit=crop&auto=format" alt="Cliente 6" class="clientes__logo">
+                <img src="<?php echo asset('img/clients/mercadolibre.jpg'); ?>" alt="MercadoLibre" class="clientes__logo" loading="lazy">
               </div>
               <div class="clientes__item">
-                <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=200&h=120&fit=crop" alt="Cliente 7" class="clientes__logo">
+                <img src="<?php echo asset('img/clients/pureandsimple.png'); ?>" alt="Pure and Simple" class="clientes__logo" loading="lazy">
               </div>
               <div class="clientes__item">
-                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=200&h=120&fit=crop" alt="Cliente 8" class="clientes__logo">
+                <img src="<?php echo asset('img/clients/sproutloud.jpg'); ?>" alt="SproutLoud" class="clientes__logo" loading="lazy">
               </div>
               <!-- Duplicar para efecto infinito -->
               <div class="clientes__item">
-                <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=200&h=120&fit=crop" alt="Cliente 1" class="clientes__logo">
+                <img src="<?php echo asset('img/clients/bydeluxe.webp'); ?>" alt="ByDeluxe" class="clientes__logo" loading="lazy">
               </div>
               <div class="clientes__item">
-                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=200&h=120&fit=crop" alt="Cliente 2" class="clientes__logo">
+                <img src="<?php echo asset('img/clients/colegioemmanuelsur.png'); ?>" alt="Colegio Emmanuel Sur" class="clientes__logo" loading="lazy">
               </div>
               <div class="clientes__item">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&h=120&fit=crop" alt="Cliente 3" class="clientes__logo">
+                <img src="<?php echo asset('img/clients/ic&t.jpg'); ?>" alt="IC&T" class="clientes__logo" loading="lazy">
               </div>
               <div class="clientes__item">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=200&h=120&fit=crop" alt="Cliente 4" class="clientes__logo">
+                <img src="<?php echo asset('img/clients/icolven.jpg'); ?>" alt="Icolven" class="clientes__logo" loading="lazy">
               </div>
               <div class="clientes__item">
-                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=200&h=120&fit=crop" alt="Cliente 5" class="clientes__logo">
+                <img src="<?php echo asset('img/clients/jmequipos.png'); ?>" alt="JM Equipos" class="clientes__logo" loading="lazy">
               </div>
               <div class="clientes__item">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&h=120&fit=crop&auto=format" alt="Cliente 6" class="clientes__logo">
+                <img src="<?php echo asset('img/clients/mercadolibre.jpg'); ?>" alt="MercadoLibre" class="clientes__logo" loading="lazy">
+              </div>
+              <div class="clientes__item">
+                <img src="<?php echo asset('img/clients/pureandsimple.png'); ?>" alt="Pure and Simple" class="clientes__logo" loading="lazy">
+              </div>
+              <div class="clientes__item">
+                <img src="<?php echo asset('img/clients/sproutloud.jpg'); ?>" alt="SproutLoud" class="clientes__logo" loading="lazy">
               </div>
             </div>
           </div>
@@ -231,22 +369,78 @@ require_once __DIR__ . '/includes/config.php';
 
     <section id="contacto" class="seccion seccion--clara seccion--contacto">
       <div class="container-content">
+        <div class="seccion__icono" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+        </div>
         <h2 class="seccion__titulo" id="contact-title">Contacto</h2>
         <p class="seccion__intro" id="contact-intro">ODERMAN GROUP SAS — Desarrollo de software a la medida.</p>
-        <p id="contact-desc">Para consultas comerciales o soporte, escríbenos o contáctanos por WhatsApp.</p>
-        <div class="contacto__canales">
-          <p class="contacto__item">
-            <span class="contacto__etiqueta" id="contact-email-label">Correo:</span>
-            <a href="mailto:info@oderman-group.com" class="contacto__enlace">info@oderman-group.com</a>
-          </p>
-          <p class="contacto__item">
-            <span class="contacto__etiqueta" id="contact-whatsapp-label">WhatsApp:</span>
-            <a href="tel:+573006075800" class="contacto__enlace">+57 300 607 5800</a>
-          </p>
-          <a href="https://wa.me/573006075800" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp" aria-label="Abrir chat de WhatsApp" id="contact-whatsapp-button">
-            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Escribir por WhatsApp
-          </a>
+        <p class="seccion__subtitle" id="contact-desc">Para consultas comerciales o soporte, escríbenos o contáctanos por WhatsApp. Estamos aquí para ayudarte.</p>
+        
+        <div class="contacto__info">
+          <div class="contacto__card contacto__card--primary">
+            <div class="contacto__card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </div>
+            <h3 class="contacto__card-title" id="contact-email-label">Correo Electrónico</h3>
+            <a href="mailto:info@oderman-group.com" class="contacto__card-link">info@oderman-group.com</a>
+          </div>
+          
+          <div class="contacto__card contacto__card--primary">
+            <div class="contacto__card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+            </div>
+            <h3 class="contacto__card-title" id="contact-phone-label">Teléfono / WhatsApp</h3>
+            <a href="tel:+573006075800" class="contacto__card-link">+57 300 607 5800</a>
+            <a href="https://wa.me/573006075800" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--small" aria-label="Abrir chat de WhatsApp" id="contact-whatsapp-button">
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <span id="contact-whatsapp-button-text">Escribir por WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contacto__sedes">
+          <h3 class="contacto__sedes-titulo" id="contact-offices-title">Nuestras Sedes</h3>
+          <div class="contacto__sedes-grid">
+            <div class="contacto__sede-card">
+              <div class="contacto__sede-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+              </div>
+              <h4 class="contacto__sede-title" id="contact-office-medellin">Medellín, Colombia</h4>
+              <p class="contacto__sede-address" id="contact-address-medellin">Carrera 83 C #33 B 11<br>Barrio La Castellana</p>
+            </div>
+            
+            <div class="contacto__sede-card">
+              <div class="contacto__sede-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+              </div>
+              <h4 class="contacto__sede-title" id="contact-office-bolivar">San Juan Nepomuceno, Bolívar</h4>
+              <p class="contacto__sede-address" id="contact-address-bolivar">Calle 16 #12 - 120<br>Barrio Arriba - Superior</p>
+            </div>
+            
+            <div class="contacto__sede-card">
+              <div class="contacto__sede-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+              </div>
+              <h4 class="contacto__sede-title" id="contact-office-canada">Mississauga, Canadá</h4>
+              <p class="contacto__sede-address" id="contact-address-canada">2100 Sherobee Road<br><span class="contacto__sede-note" id="contact-office-correspondence">(Correspondencia)</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacto__nit">
+          <p class="contacto__nit-text"><strong id="contact-nit-label">NIT:</strong> <span id="contact-nit-number">901.992.426-8</span></p>
         </div>
       </div>
     </section>
@@ -266,8 +460,15 @@ require_once __DIR__ . '/includes/config.php';
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer__contenedor-ancho">
+  <?php include __DIR__ . '/includes/footer.php'; ?>
+
+  <!-- Scripts -->
+  <script src="<?php echo asset('js/translations.js'); ?>"></script>
+  <script src="<?php echo asset('js/language.js'); ?>"></script>
+  <script src="<?php echo asset('js/cookies.js'); ?>"></script>
+  <script src="<?php echo asset('js/main.js'); ?>"></script>
+</body>
+</html>
       <div class="footer__grid">
         <div class="footer__bloque">
           <h3 class="footer__titulo" id="footer-company">Empresa</h3>
@@ -276,10 +477,8 @@ require_once __DIR__ . '/includes/config.php';
             <li><a href="<?php echo url('nosotros'); ?>" id="footer-link-about">Nosotros</a></li>
             <li><a href="<?php echo url(); ?>#servicios" id="footer-link-services">Servicios</a></li>
             <li><a href="<?php echo url('productos'); ?>" id="footer-link-products">Productos</a></li>
-            <li><a href="<?php echo url('nosotros'); ?>#mision" id="footer-link-mission">Misión</a></li>
-            <li><a href="<?php echo url('nosotros'); ?>#vision" id="footer-link-vision">Visión</a></li>
-            <li><a href="<?php echo url('nosotros'); ?>#valores" id="footer-link-values">Valores</a></li>
-            <li><a href="<?php echo url(); ?>#contacto" id="footer-link-contact">Contacto</a></li>
+            <li><a href="<?php echo url('blog'); ?>" id="footer-link-blog">Blog</a></li>
+            <li><a href="<?php echo url('noticias'); ?>" id="footer-link-news">Noticias</a></li>
             <li><a href="https://oderman-group.com/" target="_blank" rel="noopener noreferrer" id="footer-link-corporate">Sitio corporativo <span class="footer__externo" aria-label="Abre en nueva pestaña">↗</span></a></li>
           </ul>
         </div>
@@ -300,6 +499,21 @@ require_once __DIR__ . '/includes/config.php';
             <li><a href="tel:+573006075800">+57 300 607 5800</a></li>
             <li><a href="https://wa.me/573006075800" target="_blank" rel="noopener noreferrer" class="footer__wa">WhatsApp</a></li>
           </ul>
+          <div class="footer__sedes">
+            <h4 class="footer__sedes-titulo" id="footer-offices-title">Nuestras Sedes</h4>
+            <div class="footer__sede">
+              <strong id="footer-office-medellin">Medellín, Colombia</strong>
+              <p id="footer-address-medellin">Carrera 83 C #33 B 11<br>Barrio La Castellana</p>
+            </div>
+            <div class="footer__sede">
+              <strong id="footer-office-bolivar">San Juan Nepomuceno, Bolívar</strong>
+              <p id="footer-address-bolivar">Calle 16 #12 - 120<br>Barrio Arriba - Superior</p>
+            </div>
+            <div class="footer__sede">
+              <strong id="footer-office-canada">Mississauga, Canadá</strong>
+              <p id="footer-address-canada">2100 Sherobee Road<br><span id="footer-office-correspondence">(Correspondencia)</span></p>
+            </div>
+          </div>
         </div>
         <div class="footer__bloque footer__bloque--redes">
           <h3 class="footer__titulo" id="footer-follow">Síguenos</h3>
@@ -314,6 +528,7 @@ require_once __DIR__ . '/includes/config.php';
       </div>
       <div class="footer__baja">
         <p class="footer__firma">© <span id="anio"></span> ODERMAN GROUP SAS. <span id="footer-rights">Todos los derechos reservados.</span></p>
+        <p class="footer__nit" id="footer-nit">NIT: 901.992.426-8</p>
         <p class="footer__dominio">oderman.com.co</p>
       </div>
       <div class="footer__legal">
@@ -416,6 +631,42 @@ require_once __DIR__ . '/includes/config.php';
             btn.setAttribute('aria-label', 'Abrir menú');
           }
         });
+      }
+    })();
+  </script>
+
+  <!-- Botón Scroll to Top -->
+  <button id="scroll-to-top" class="scroll-to-top" aria-label="Volver arriba" title="Volver arriba">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+    </svg>
+  </button>
+
+  <script>
+    (function() {
+      // Scroll to Top Button
+      var scrollToTopBtn = document.getElementById('scroll-to-top');
+      if (scrollToTopBtn) {
+        // Mostrar/ocultar botón según scroll
+        function toggleScrollButton() {
+          if (window.pageYOffset > 300) {
+            scrollToTopBtn.classList.add('scroll-to-top--visible');
+          } else {
+            scrollToTopBtn.classList.remove('scroll-to-top--visible');
+          }
+        }
+
+        // Scroll suave al hacer clic
+        scrollToTopBtn.addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+
+        // Escuchar eventos de scroll
+        window.addEventListener('scroll', toggleScrollButton);
+        toggleScrollButton(); // Verificar estado inicial
       }
     })();
   </script>

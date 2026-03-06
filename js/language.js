@@ -35,9 +35,7 @@
     const navLinks = {
       'nav-home': t.nav.home,
       'nav-about': t.nav.about,
-      'nav-services': t.nav.services,
-      'nav-products': t.nav.products,
-      'nav-contact': t.nav.contact
+      'nav-products': t.nav.products
     };
 
     Object.keys(navLinks).forEach(id => {
@@ -70,12 +68,56 @@
     // Servicios
     updateSection('services-title', t.sections.services.title);
     updateSection('services-intro', t.sections.services.intro);
-    updateSection('service-software-name', t.sections.services.software.name);
-    updateSection('service-software-desc', t.sections.services.software.desc);
-    updateSection('service-consulting-name', t.sections.services.consulting.name);
-    updateSection('service-consulting-desc', t.sections.services.consulting.desc);
-    updateSection('service-support-name', t.sections.services.support.name);
-    updateSection('service-support-desc', t.sections.services.support.desc);
+    updateSection('service-security-name', t.sections.services.security.name);
+    updateSection('service-security-desc', t.sections.services.security.desc);
+    updateSection('service-it-management-name', t.sections.services.itManagement.name);
+    updateSection('service-it-management-desc', t.sections.services.itManagement.desc);
+    updateSection('service-ai-name', t.sections.services.ai.name);
+    updateSection('service-ai-desc', t.sections.services.ai.desc);
+    updateSection('service-architecture-name', t.sections.services.architecture.name);
+    updateSection('service-architecture-desc', t.sections.services.architecture.desc);
+    updateSection('service-crm-name', t.sections.services.crm.name);
+    updateSection('service-crm-desc', t.sections.services.crm.desc);
+    updateSection('service-finance-name', t.sections.services.finance.name);
+    updateSection('service-finance-desc', t.sections.services.finance.desc);
+    updateSection('service-marketing-name', t.sections.services.marketing.name);
+    updateSection('service-marketing-desc', t.sections.services.marketing.desc);
+    updateSection('service-cloud-name', t.sections.services.cloud.name);
+    updateSection('service-cloud-desc', t.sections.services.cloud.desc);
+
+    // Seguridad y Certificaciones
+    updateSection('security-commitment-title', t.sections.securityCommitment.title);
+    updateSection('security-commitment-intro', t.sections.securityCommitment.intro);
+    updateSection('security-point-1-title', t.sections.securityCommitment.points.p1.title);
+    updateSection('security-point-1-desc', t.sections.securityCommitment.points.p1.desc);
+    updateSection('security-point-2-title', t.sections.securityCommitment.points.p2.title);
+    updateSection('security-point-2-desc', t.sections.securityCommitment.points.p2.desc);
+    updateSection('security-point-3-title', t.sections.securityCommitment.points.p3.title);
+    updateSection('security-point-3-desc', t.sections.securityCommitment.points.p3.desc);
+    updateSection('iso-9001-title', t.sections.securityCommitment.iso.iso9001.title);
+    updateSection('iso-9001-desc', t.sections.securityCommitment.iso.iso9001.desc);
+    updateSection('iso-14001-title', t.sections.securityCommitment.iso.iso14001.title);
+    updateSection('iso-14001-desc', t.sections.securityCommitment.iso.iso14001.desc);
+    updateSection('iso-27001-title', t.sections.securityCommitment.iso.iso27001.title);
+    updateSection('iso-27001-desc', t.sections.securityCommitment.iso.iso27001.desc);
+
+    // Cobertura
+    updateSection('coverage-title', t.sections.coverage.title);
+    updateSection('coverage-intro', t.sections.coverage.intro);
+    updateSection('coverage-country-colombia', t.sections.coverage.countries.colombia);
+    updateSection('coverage-country-argentina', t.sections.coverage.countries.argentina);
+    updateSection('coverage-country-brazil', t.sections.coverage.countries.brazil);
+    updateSection('coverage-country-canada', t.sections.coverage.countries.canada);
+    updateSection('coverage-country-caribbean', t.sections.coverage.countries.caribbean);
+    updateSection('coverage-country-chile', t.sections.coverage.countries.chile);
+    updateSection('coverage-country-costa-rica', t.sections.coverage.countries.costaRica);
+    updateSection('coverage-country-ecuador', t.sections.coverage.countries.ecuador);
+    updateSection('coverage-country-spain', t.sections.coverage.countries.spain);
+    updateSection('coverage-country-usa', t.sections.coverage.countries.usa);
+    updateSection('coverage-country-mexico', t.sections.coverage.countries.mexico);
+    updateSection('coverage-country-panama', t.sections.coverage.countries.panama);
+    updateSection('coverage-country-peru', t.sections.coverage.countries.peru);
+    updateSection('coverage-country-northern-triangle', t.sections.coverage.countries.northernTriangle);
     
     updateSection('mission-title', t.sections.mission.title);
     updateSection('mission-text1', t.sections.mission.text1);
@@ -116,8 +158,22 @@
     updateSection('contact-intro', t.sections.contact.intro);
     updateSection('contact-desc', t.sections.contact.description);
     updateSection('contact-email-label', t.sections.contact.email);
+    updateSection('contact-phone-label', t.sections.contact.phone);
     updateSection('contact-whatsapp-label', t.sections.contact.whatsapp);
-    updateSection('contact-whatsapp-button', t.sections.contact.whatsappButton);
+    updateSection('contact-whatsapp-button-text', t.sections.contact.whatsappButton);
+    updateSection('contact-offices-title', t.sections.contact.officesTitle);
+    updateSection('contact-office-medellin', t.sections.contact.officeMedellin);
+    const addressMedellin = document.getElementById('contact-address-medellin');
+    if (addressMedellin) addressMedellin.innerHTML = t.sections.contact.addressMedellin;
+    updateSection('contact-office-bolivar', t.sections.contact.officeBolivar);
+    const addressBolivar = document.getElementById('contact-address-bolivar');
+    if (addressBolivar) addressBolivar.innerHTML = t.sections.contact.addressBolivar;
+    updateSection('contact-office-canada', t.sections.contact.officeCanada);
+    const addressCanada = document.getElementById('contact-address-canada');
+    if (addressCanada) addressCanada.innerHTML = t.sections.contact.addressCanada;
+    updateSection('contact-office-correspondence', t.sections.contact.correspondence);
+    updateSection('contact-nit-label', t.sections.contact.nitLabel);
+    updateSection('contact-nit-number', t.sections.contact.nitNumber);
     
     // Clientes
     updateSection('clients-title', t.sections.clients.title);
@@ -127,6 +183,76 @@
     if (t.sections.products) {
       updateSection('products-title', t.sections.products.title);
       updateSection('products-intro', t.sections.products.intro);
+    }
+    
+    // Blog
+    if (t.sections.blog) {
+      updateSection('blog-title', t.sections.blog.title);
+      updateSection('blog-intro', t.sections.blog.intro);
+    }
+    
+    // Noticias
+    if (t.sections.news) {
+      updateSection('news-title', t.sections.news.title);
+      updateSection('news-intro', t.sections.news.intro);
+    }
+    
+    // Historia
+    if (t.sections.history) {
+      updateSection('history-title', t.sections.history.title);
+      updateSection('history-subtitle', t.sections.history.subtitle);
+      updateSection('history-2009-title', t.sections.history['2009-title']);
+      updateSection('history-2009-text', t.sections.history['2009-text']);
+      updateSection('history-study-title', t.sections.history['study-title']);
+      updateSection('history-study-text', t.sections.history['study-text']);
+      updateSection('history-sintia-title', t.sections.history['sintia-title']);
+      updateSection('history-sintia-text', t.sections.history['sintia-text']);
+      updateSection('history-award-title', t.sections.history['award-title']);
+      updateSection('history-award-text', t.sections.history['award-text']);
+      updateSection('history-growth-title', t.sections.history['growth-title']);
+      updateSection('history-growth-text', t.sections.history['growth-text']);
+      updateSection('history-canada-title', t.sections.history['canada-title']);
+      updateSection('history-canada-text', t.sections.history['canada-text']);
+      updateSection('history-return-title', t.sections.history['return-title']);
+      updateSection('history-return-text', t.sections.history['return-text']);
+      updateSection('history-legacy', t.sections.history.legacy);
+    }
+    
+    // Traducir tarjetas de blog
+    const blogCards = document.querySelectorAll('.blog-card');
+    blogCards.forEach(card => {
+      const category = card.querySelector('.blog-card__category');
+      const title = card.querySelector('.blog-card__title');
+      const excerpt = card.querySelector('.blog-card__excerpt');
+      
+      if (category && category.dataset.categoryEs && category.dataset.categoryEn) {
+        category.textContent = lang === 'es' ? category.dataset.categoryEs : category.dataset.categoryEn;
+      }
+      if (title && title.dataset.titleEs && title.dataset.titleEn) {
+        title.textContent = lang === 'es' ? title.dataset.titleEs : title.dataset.titleEn;
+      }
+      if (excerpt && excerpt.dataset.excerptEs && excerpt.dataset.excerptEn) {
+        excerpt.textContent = lang === 'es' ? excerpt.dataset.excerptEs : excerpt.dataset.excerptEn;
+      }
+    });
+    
+    // Traducir artículo individual
+    const articuloCategory = document.querySelector('.articulo__category');
+    const articuloTitle = document.querySelector('.articulo__titulo');
+    const articuloBody = document.querySelector('.articulo__body');
+    const articuloBreadcrumb = document.getElementById('articulo-breadcrumb-title');
+    
+    if (articuloCategory && articuloCategory.dataset.categoryEs && articuloCategory.dataset.categoryEn) {
+      articuloCategory.textContent = lang === 'es' ? articuloCategory.dataset.categoryEs : articuloCategory.dataset.categoryEn;
+    }
+    if (articuloTitle && articuloTitle.dataset.titleEs && articuloTitle.dataset.titleEn) {
+      articuloTitle.textContent = lang === 'es' ? articuloTitle.dataset.titleEs : articuloTitle.dataset.titleEn;
+      if (articuloBreadcrumb) {
+        articuloBreadcrumb.textContent = lang === 'es' ? articuloTitle.dataset.titleEs : articuloTitle.dataset.titleEn;
+      }
+    }
+    if (articuloBody && articuloBody.dataset.contentEs && articuloBody.dataset.contentEn) {
+      articuloBody.innerHTML = lang === 'es' ? articuloBody.dataset.contentEs : articuloBody.dataset.contentEn;
     }
     
     // CTA
@@ -143,12 +269,25 @@
     updateSection('footer-contact', t.footer.contact);
     updateSection('footer-follow', t.footer.follow);
     updateSection('footer-rights', t.footer.rights);
+    updateSection('footer-nit', t.footer.nit);
+    updateSection('footer-offices-title', t.footer.officesTitle);
+    updateSection('footer-office-medellin', t.footer.officeMedellin);
+    const footerAddressMedellin = document.getElementById('footer-address-medellin');
+    if (footerAddressMedellin) footerAddressMedellin.innerHTML = t.footer.addressMedellin;
+    updateSection('footer-office-bolivar', t.footer.officeBolivar);
+    const footerAddressBolivar = document.getElementById('footer-address-bolivar');
+    if (footerAddressBolivar) footerAddressBolivar.innerHTML = t.footer.addressBolivar;
+    updateSection('footer-office-canada', t.footer.officeCanada);
+    const footerAddressCanada = document.getElementById('footer-address-canada');
+    if (footerAddressCanada) footerAddressCanada.innerHTML = t.footer.addressCanada;
+    updateSection('footer-office-correspondence', t.footer.correspondence);
     
     // Footer links
     updateSection('footer-link-home', t.footer.links.home);
     updateSection('footer-link-about', t.footer.links.about);
-    updateSection('footer-link-services', t.footer.links.services);
     updateSection('footer-link-products', t.footer.links.products);
+    updateSection('footer-link-blog', t.footer.links.blog);
+    updateSection('footer-link-news', t.footer.links.news);
     updateSection('footer-link-mission', t.footer.links.mission);
     updateSection('footer-link-vision', t.footer.links.vision);
     updateSection('footer-link-values', t.footer.links.values);

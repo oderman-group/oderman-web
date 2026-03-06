@@ -81,4 +81,68 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://oderman.com.co/cookies"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/cookies?lang=en"/>
   </url>
+  <url>
+    <loc>https://oderman.com.co/blog</loc>
+    <lastmod>2024-01-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oderman.com.co/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/blog?lang=en"/>
+  </url>
+  <url>
+    <loc>https://oderman.com.co/blog/ciclo-desarrollo-software</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oderman.com.co/blog/ciclo-desarrollo-software"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/blog/ciclo-desarrollo-software?lang=en"/>
+  </url>
+  <url>
+    <loc>https://oderman.com.co/blog/seguridad-desarrollo-software</loc>
+    <lastmod>2024-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oderman.com.co/blog/seguridad-desarrollo-software"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/blog/seguridad-desarrollo-software?lang=en"/>
+  </url>
+  <url>
+    <loc>https://oderman.com.co/blog/tecnologias-medio-ambiente</loc>
+    <lastmod>2024-01-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oderman.com.co/blog/tecnologias-medio-ambiente"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/blog/tecnologias-medio-ambiente?lang=en"/>
+  </url>
+  <url>
+    <loc>https://oderman.com.co/noticias</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oderman.com.co/noticias"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/noticias?lang=en"/>
+  </url>
+  <url>
+    <loc>https://oderman.com.co/noticias/apertura-sucursal-san-juan-nepomuceno</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oderman.com.co/noticias/apertura-sucursal-san-juan-nepomuceno"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/noticias/apertura-sucursal-san-juan-nepomuceno?lang=en"/>
+  </url>
+  <url>
+    <loc>https://oderman.com.co/noticias/certificacion-iso-27001</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oderman.com.co/noticias/certificacion-iso-27001"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/noticias/certificacion-iso-27001?lang=en"/>
+  </url>
+  <url>
+    <loc>https://oderman.com.co/noticias/expansion-canada-2022</loc>
+    <lastmod>2022-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://oderman.com.co/noticias/expansion-canada-2022"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oderman.com.co/noticias/expansion-canada-2022?lang=en"/>
+  </url>
 </urlset>
