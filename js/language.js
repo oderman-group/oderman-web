@@ -552,8 +552,10 @@
       updateSection('rates-important-text', t.ratesPage.importantText);
       updateSection('rates-email-title', t.ratesPage.emailTitle);
       updateSection('rates-email-single', t.ratesPage.emailSingle);
-      updateSection('rates-email-package', t.ratesPage.emailPackage);
-      updateSection('rates-email-total', t.ratesPage.emailTotal);
+      updateSection('rates-email-package-1000', t.ratesPage.emailPackage1000);
+      updateSection('rates-email-total-1000', t.ratesPage.emailTotal1000);
+      updateSection('rates-email-package-10000', t.ratesPage.emailPackage10000);
+      updateSection('rates-email-total-10000', t.ratesPage.emailTotal10000);
       updateSection('rates-sms-title', t.ratesPage.smsTitle);
       updateSection('rates-sms-single', t.ratesPage.smsSingle);
       updateSection('rates-sms-package', t.ratesPage.smsPackage);
@@ -562,6 +564,12 @@
       updateSection('rates-whatsapp-single', t.ratesPage.whatsappSingle);
       updateSection('rates-whatsapp-package', t.ratesPage.whatsappPackage);
       updateSection('rates-whatsapp-total', t.ratesPage.whatsappTotal);
+      updateSection('rates-internal-email-title', t.ratesPage.internalEmailTitle);
+      updateSection('rates-internal-email-single', t.ratesPage.internalEmailSingle);
+      updateSection('rates-internal-email-package-1000', t.ratesPage.internalEmailPackage1000);
+      updateSection('rates-internal-email-total-1000', t.ratesPage.internalEmailTotal1000);
+      updateSection('rates-internal-email-package-10000', t.ratesPage.internalEmailPackage10000);
+      updateSection('rates-internal-email-total-10000', t.ratesPage.internalEmailTotal10000);
       updateSection('rates-clarifications-title', t.ratesPage.clarificationsTitle);
       updateSection('rates-clarification-1', t.ratesPage.clarification1);
       updateSection('rates-clarification-2', t.ratesPage.clarification2);
@@ -657,6 +665,52 @@
       updateSection('demo-contact-phone', t.demoPage.demoContactPhone);
       updateSection('demo-contact-email', t.demoPage.demoContactEmail);
       updateSection('demo-contact-web', t.demoPage.demoContactWeb);
+    }
+    
+    // Presentation Page
+    if (t.presentationPage) {
+      updateSection('presentation-tagline', t.presentationPage.tagline);
+      updateSection('presentation-title', t.presentationPage.title);
+      updateSection('presentation-subtitle', t.presentationPage.subtitle);
+      updateSection('presentation-timeline-title', t.presentationPage.timelineTitle);
+      updateSection('presentation-timeline-intro', t.presentationPage.timelineIntro);
+      updateSection('presentation-year-2013', t.presentationPage.year2013);
+      updateSection('presentation-2013-title', t.presentationPage['2013-title']);
+      updateSection('presentation-2013-description', t.presentationPage['2013-description']);
+      updateSection('presentation-year-2021', t.presentationPage.year2021);
+      updateSection('presentation-2021-title', t.presentationPage['2021-title']);
+      updateSection('presentation-2021-description', t.presentationPage['2021-description']);
+      updateSection('presentation-year-2026', t.presentationPage.year2026);
+      updateSection('presentation-2026-title', t.presentationPage['2026-title']);
+      updateSection('presentation-2026-description', t.presentationPage['2026-description']);
+      updateSection('presentation-costs-title', t.presentationPage.costsTitle);
+      updateSection('presentation-costs-intro', t.presentationPage.costsIntro);
+      updateSection('presentation-cost-server-label', t.presentationPage.costServerLabel);
+      updateSection('presentation-cost-server-value', t.presentationPage.costServerValue);
+      updateSection('presentation-cost-server-period', t.presentationPage.costServerPeriod);
+      updateSection('presentation-cost-support-label', t.presentationPage.costSupportLabel);
+      updateSection('presentation-cost-support-value', t.presentationPage.costSupportValue);
+      updateSection('presentation-cost-support-period', t.presentationPage.costSupportPeriod);
+      updateSection('presentation-cost-email-label', t.presentationPage.costEmailLabel);
+      updateSection('presentation-cost-email-value', t.presentationPage.costEmailValue);
+      updateSection('presentation-cost-email-period', t.presentationPage.costEmailPeriod);
+      updateSection('presentation-cost-email-note', t.presentationPage.costEmailNote);
+      updateSection('presentation-modules-title', t.presentationPage.modulesTitle);
+      updateSection('presentation-modules-intro', t.presentationPage.modulesIntro);
+      updateSection('presentation-module-1', t.presentationPage.module1);
+      updateSection('presentation-module-2', t.presentationPage.module2);
+      updateSection('presentation-module-3', t.presentationPage.module3);
+      updateSection('presentation-module-4', t.presentationPage.module4);
+      updateSection('presentation-module-5', t.presentationPage.module5);
+      updateSection('presentation-module-6', t.presentationPage.module6);
+      updateSection('presentation-module-7', t.presentationPage.module7);
+      updateSection('presentation-module-8', t.presentationPage.module8);
+      updateSection('presentation-methods-title', t.presentationPage.methodsTitle);
+      updateSection('presentation-methods-intro', t.presentationPage.methodsIntro);
+      updateSection('presentation-method-custom-title', t.presentationPage.methodCustomTitle);
+      updateSection('presentation-method-custom-description', t.presentationPage.methodCustomDescription);
+      updateSection('presentation-method-anticipatory-title', t.presentationPage.methodAnticipatoryTitle);
+      updateSection('presentation-method-anticipatory-description', t.presentationPage.methodAnticipatoryDescription);
     }
   }
 

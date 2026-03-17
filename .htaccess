@@ -49,6 +49,8 @@
     RewriteRule ^products/?$ productos.php [L]
     RewriteRule ^sintia/?$ sintia.php [L]
     RewriteRule ^ecosistema-sintia/?$ sintia.php [L]
+    RewriteRule ^presentacion-cliente/?$ presentacion-cliente.php [L]
+    RewriteRule ^client-presentation/?$ presentacion-cliente.php [L]
     RewriteRule ^services/?$ services.php [L]
     RewriteRule ^servicios/?$ services.php [L]
     RewriteRule ^contact/?$ contact.php [L]

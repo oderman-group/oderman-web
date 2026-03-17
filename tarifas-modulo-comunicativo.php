@@ -53,20 +53,28 @@ require_once __DIR__ . '/includes/config.php';
         <div class="tarifas">
           <article class="tarifa">
             <div class="tarifa__encabezado">
-              <span class="tarifa__icono" aria-hidden="true">✉</span>
-              <h2 class="tarifa__titulo" id="rates-email-title">Email</h2>
+              <span class="tarifa__icono" aria-hidden="true">📧</span>
+              <h2 class="tarifa__titulo" id="rates-internal-email-title">Correo Interno</h2>
             </div>
             <ul class="tarifa__lista">
               <li>
-                <span class="tarifa__concepto" id="rates-email-single">Por mensaje suelto</span>
+                <span class="tarifa__concepto" id="rates-internal-email-single">Por mensaje suelto</span>
                 <span class="tarifa__precio">$20 <abbr title="pesos colombianos">COP</abbr> / mensaje</span>
               </li>
               <li class="tarifa__destacado">
-                <span class="tarifa__concepto" id="rates-email-package">Paquete 10.000 emails</span>
+                <span class="tarifa__concepto" id="rates-internal-email-package-1000">Paquete 1.000 mensajes</span>
+                <span class="tarifa__precio">$15 <abbr title="pesos colombianos">COP</abbr> / mensaje</span>
+              </li>
+              <li class="tarifa__total">
+                <span class="tarifa__concepto" id="rates-internal-email-total-1000">Total del paquete</span>
+                <span class="tarifa__precio">$15.000 <abbr title="pesos colombianos">COP</abbr></span>
+              </li>
+              <li class="tarifa__destacado">
+                <span class="tarifa__concepto" id="rates-internal-email-package-10000">Paquete 10.000 mensajes</span>
                 <span class="tarifa__precio">$10 <abbr title="pesos colombianos">COP</abbr> / mensaje</span>
               </li>
               <li class="tarifa__total">
-                <span class="tarifa__concepto" id="rates-email-total">Total del paquete</span>
+                <span class="tarifa__concepto" id="rates-internal-email-total-10000">Total del paquete</span>
                 <span class="tarifa__precio">$100.000 <abbr title="pesos colombianos">COP</abbr></span>
               </li>
             </ul>
@@ -74,21 +82,29 @@ require_once __DIR__ . '/includes/config.php';
 
           <article class="tarifa">
             <div class="tarifa__encabezado">
-              <span class="tarifa__icono" aria-hidden="true">📱</span>
-              <h2 class="tarifa__titulo" id="rates-sms-title">SMS</h2>
+              <span class="tarifa__icono" aria-hidden="true">✉</span>
+              <h2 class="tarifa__titulo" id="rates-email-title">Email</h2>
             </div>
             <ul class="tarifa__lista">
               <li>
-                <span class="tarifa__concepto" id="rates-sms-single">Por mensaje suelto</span>
-                <span class="tarifa__precio">$300 <abbr title="pesos colombianos">COP</abbr> / mensaje</span>
+                <span class="tarifa__concepto" id="rates-email-single">Por mensaje suelto</span>
+                <span class="tarifa__precio">$80 <abbr title="pesos colombianos">COP</abbr> / mensaje</span>
               </li>
               <li class="tarifa__destacado">
-                <span class="tarifa__concepto" id="rates-sms-package">Paquete 1.000 SMS</span>
-                <span class="tarifa__precio">$280 <abbr title="pesos colombianos">COP</abbr> / mensaje</span>
+                <span class="tarifa__concepto" id="rates-email-package-1000">Paquete 1.000 emails</span>
+                <span class="tarifa__precio">$60 <abbr title="pesos colombianos">COP</abbr> / mensaje</span>
               </li>
               <li class="tarifa__total">
-                <span class="tarifa__concepto" id="rates-sms-total">Total del paquete</span>
-                <span class="tarifa__precio">$280.000 <abbr title="pesos colombianos">COP</abbr></span>
+                <span class="tarifa__concepto" id="rates-email-total-1000">Total del paquete</span>
+                <span class="tarifa__precio">$60.000 <abbr title="pesos colombianos">COP</abbr></span>
+              </li>
+              <li class="tarifa__destacado">
+                <span class="tarifa__concepto" id="rates-email-package-10000">Paquete 10.000 emails</span>
+                <span class="tarifa__precio">$20 <abbr title="pesos colombianos">COP</abbr> / mensaje</span>
+              </li>
+              <li class="tarifa__total">
+                <span class="tarifa__concepto" id="rates-email-total-10000">Total del paquete</span>
+                <span class="tarifa__precio">$200.000 <abbr title="pesos colombianos">COP</abbr></span>
               </li>
             </ul>
           </article>
@@ -110,6 +126,27 @@ require_once __DIR__ . '/includes/config.php';
               <li class="tarifa__total">
                 <span class="tarifa__concepto" id="rates-whatsapp-total">Total del paquete</span>
                 <span class="tarifa__precio">$110.000 <abbr title="pesos colombianos">COP</abbr></span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="tarifa">
+            <div class="tarifa__encabezado">
+              <span class="tarifa__icono" aria-hidden="true">📱</span>
+              <h2 class="tarifa__titulo" id="rates-sms-title">SMS</h2>
+            </div>
+            <ul class="tarifa__lista">
+              <li>
+                <span class="tarifa__concepto" id="rates-sms-single">Por mensaje suelto</span>
+                <span class="tarifa__precio">$300 <abbr title="pesos colombianos">COP</abbr> / mensaje</span>
+              </li>
+              <li class="tarifa__destacado">
+                <span class="tarifa__concepto" id="rates-sms-package">Paquete 1.000 SMS</span>
+                <span class="tarifa__precio">$280 <abbr title="pesos colombianos">COP</abbr> / mensaje</span>
+              </li>
+              <li class="tarifa__total">
+                <span class="tarifa__concepto" id="rates-sms-total">Total del paquete</span>
+                <span class="tarifa__precio">$280.000 <abbr title="pesos colombianos">COP</abbr></span>
               </li>
             </ul>
           </article>
